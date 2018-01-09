@@ -1,3 +1,68 @@
 /*
  Basic Styling
 */
+
+body
+{
+  margin: 0;
+}
+
+.navContainer
+{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
+header
+{
+  background-color: #222;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+nav
+{
+  float:right;
+}
+
+.logo
+{
+  float:left;
+  color: white;
+  padding-top: 25px;
+}
+
+.navRight
+{
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+}
+
+.navlink
+{
+  display: inline-block;
+  margin-left: 70px;
+  position: relative;
+}
+
+.navlink a
+{
+  display: block;
+  color:#fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 25px 0;
+}
+
+nav a:hover::after
+{
+  content:'';
+  display: block;
+  width: 100%;
+  background-color: white;
+  height: 2px;
+  position: absolute;
+}
