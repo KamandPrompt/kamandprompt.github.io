@@ -2,64 +2,53 @@
  Basic Styling
 */
 
-body
-{
+body {
   margin: 0;
 }
 
-.navContainer
-{
+.navContainer {
   width: 80%;
   margin: 0 auto;
 }
 
-
-
-header
-{
+header {
   background-color: #222;
   overflow: hidden;
   font-weight: bold;
 }
 
-nav
-{
-  float:right;
+nav {
+  float: right;
 }
 
-.logo
-{
-  float:left;
+.logo {
+  float: left;
   color: white;
   padding-top: 25px;
 }
 
-.navRight
-{
+.navRight {
   list-style-type: none;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
-.navlink
-{
+.navlink {
   display: inline-block;
   margin-left: 70px;
   position: relative;
 }
 
-.navlink a
-{
+.navlink a {
   display: block;
-  color:#fff;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   padding: 25px 0;
 }
 
-nav a:hover::after
-{
-  content:'';
+nav a:hover::after {
+  content: '';
   display: block;
   width: 100%;
   background-color: white;
