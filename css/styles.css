@@ -31,11 +31,13 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
 }
 
 .navlink {
   display: inline-block;
-  margin-left: 70px;
+  margin-left: 35px;
   position: relative;
 }
 
@@ -47,11 +49,29 @@ nav {
   padding: 25px 0;
 }
 
-nav a:hover::after {
+.dividerVertical
+{
+  display: inline;
+  height: 40px;
+  width: 1px;
+  margin: 0 10px;
+  margin-left:35px;
+  background-color: #DDD;
+  border-right: 2px solid #FFF;
+  overflow: hidden;
+}
+
+nav a::after
+{
   content: '';
   display: block;
-  width: 100%;
+  width: 0%;
   background-color: white;
-  height: 2px;
+  height: 1px;
   position: absolute;
+  transition: all ease-in-out 200ms;
+}
+
+nav a:hover::after {
+  width:100%
 }
