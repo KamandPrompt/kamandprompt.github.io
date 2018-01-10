@@ -14,7 +14,6 @@ body {
 header {
   background-color: #222;
   overflow: hidden;
-  font-weight: bold;
 }
 
 nav {
@@ -31,7 +30,7 @@ nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Lato', sans-serif;
   font-size: 20px;
 }
 
@@ -55,9 +54,10 @@ nav {
   height: 40px;
   width: 1px;
   margin: 0 10px;
+  padding: 2px 0;
   margin-left:35px;
   background-color: #DDD;
-  border-right: 2px solid #FFF;
+  border-right: 1px solid #FFF;
   overflow: hidden;
 }
 
@@ -69,7 +69,7 @@ nav a::after
   background-color: white;
   height: 1px;
   position: absolute;
-  transition: all ease-in-out 200ms;
+  transition: all ease-in-out 250ms;
 }
 
 nav a:hover::after {
