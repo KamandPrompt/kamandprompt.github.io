@@ -1,19 +1,22 @@
-/*
- Basic Styling
-*/
+/****************************
+BasicStyling
+*****************************/
 
 body {
   margin: 0;
 }
 
-.navContainer {
-  width: 80%;
-  margin: 0 auto;
-}
-
 header {
   background-color: #222;
   overflow: hidden;
+}
+
+/***********************************
+Navbar
+************************************/
+.navContainer {
+  width: 80%;
+  margin: 0 auto;
 }
 
 nav {
@@ -23,7 +26,12 @@ nav {
 .logo {
   float: left;
   color: white;
-  padding-top: 25px;
+  padding-top: 18px;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin: 0;
 }
 
 .navRight {
@@ -55,7 +63,7 @@ nav {
   width: 1px;
   margin: 0 10px;
   padding: 2px 0;
-  margin-left:35px;
+  margin-left:40px;
   background-color: #DDD;
   border-right: 1px solid #FFF;
   overflow: hidden;
@@ -74,4 +82,40 @@ nav a::after
 
 nav a:hover::after {
   width:100%
+}
+
+/***********************************
+Banner
+************************************/
+.banner{
+  background: url('../img/banner2.jpg') no-repeat center top;
+  background-size: 100%;
+  position: relative;
+}
+.bg-color{
+  background-color: RGBA(12, 11, 11, 0.82);
+  min-height: 485px;
+}
+.text-dec{
+  font-size: 40px;
+  padding: 10px 20px;
+  margin: 15px 0;
+  color: #fff;
+}
+.text-border{
+  display: inline-block;
+  margin-top: 80px;
+}
+.intro-para{
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 45px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.big-text{
+  font-size: 35px;
+}
+.small-text{
+  font-size: 25px;
 }
