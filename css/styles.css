@@ -28,6 +28,7 @@ Navigation bar
 .navbar-default .navbar-brand {
   color: #1E88E5;
 }
+
 .navbar-default {
   background-color: #222;
 }
@@ -36,7 +37,7 @@ Navigation bar
 }
 .navbar-default .navbar-nav > li > a {
   color: #fff;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
 }
 .navbar-nav > li > a{
@@ -46,7 +47,7 @@ Navigation bar
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover
 {
-  color: #1E88E5;
+  color: #fff;
 }
 
 .navbar-nav .active a{
@@ -69,6 +70,36 @@ Navigation bar
 .navbar {
   margin-bottom: 0px;
 }
+
+.navlink {
+  display: inline-block;
+  margin-left: 35px;
+  position: relative;
+}
+
+.navlink a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 25px 0;
+}
+
+.navlink a::after
+{
+  content: '';
+  display: block;
+  width: 0%;
+  background-color: white;
+  height: 1px;
+  position: absolute;
+  transition: all ease-in-out 250ms;
+}
+
+.navlink a:hover::after {
+  width:77%
+}
+
 
 /***********************************
 Banner
