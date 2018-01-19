@@ -4,97 +4,84 @@ BasicStyling
 
 body {
   margin: 0;
+  color: #717f86;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
-header {
-  background-color: #222;
-  overflow: hidden;
+h1, h2, h3, h4, h5, h6{
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  color: #4B4B4C;
+}
+a{
+  color: #1E88E5;
+}
+a:hover, a:focus{
+  color: #1E88E5;
 }
 
 /***********************************
-Navbar
+Navigation bar
 ************************************/
-.navContainer {
-  width: 80%;
-  margin: 0 auto;
+.navbar-default .navbar-brand {
+  color: #1E88E5;
 }
-
-nav {
-  float: right;
+.navbar-default {
+  background-color: #222;
 }
-
-.logo {
-  float: left;
-  color: white;
-  padding-top: 18px;
-  font-family: 'Lato', sans-serif;
-  font-size: 30px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  margin: 0;
+.course-text{
+  padding: 84px;
 }
-
-.navRight {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
-}
-
-.navlink {
-  display: inline-block;
-  margin-left: 35px;
-  position: relative;
-}
-
-.navlink a {
-  display: block;
+.navbar-default .navbar-nav > li > a {
   color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 25px 0;
+  font-size: 15px;
+  font-weight: 700;
 }
-
-.dividerVertical
+.navbar-nav > li > a{
+  padding: 0px;
+  margin: 10px 5px;
+  padding: 10px 15px;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover
 {
-  display: inline;
-  height: 40px;
-  width: 1px;
-  margin: 0 10px;
-  padding: 2px 0;
-  margin-left:40px;
-  background-color: #DDD;
-  border-right: 1px solid #FFF;
-  overflow: hidden;
+  color: #1E88E5;
 }
 
-nav a::after
-{
-  content: '';
-  display: block;
-  width: 0%;
-  background-color: white;
-  height: 1px;
-  position: absolute;
-  transition: all ease-in-out 250ms;
+.navbar-nav .active a{
+  background: none !important;
+  color: #1E88E5 !important;
+  outline: none;
 }
 
-nav a:hover::after {
-  width:100%
+.navbar-default .navbar-brand {
+  font-family: 'Dosis', sans-serif !important;
+  font-weight: 700;
+  padding: 0px;
+  height: inherit;
+  font-size: 36px;
+  margin: 20px 0px;
+}
+.navbar-default .navbar-brand span{
+  font-weight: 100 !important;
+}
+.navbar {
+  margin-bottom: 0px;
 }
 
 /***********************************
 Banner
 ************************************/
 .banner{
-  background: url('../img/banner2.jpg') no-repeat center top;
-  background-size: 100%;
+  background: url('../img/banner1.png') no-repeat center top;
+  background-size: cover;
+  min-height: 580px;
   position: relative;
 }
 .bg-color{
   background-color: RGBA(12, 11, 11, 0.82);
-  min-height: 485px;
+  min-height: 580px;
 }
 .text-dec{
   font-size: 40px;
@@ -104,13 +91,16 @@ Banner
 }
 .text-border{
   display: inline-block;
-  margin-top: 80px;
+  margin-top: 150px;
 }
 .intro-para{
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 45px;
   color: #fff;
-  margin-top: 20px;
+  margin-top: 30px;
+}
+.quote .btn{
+  background-color:
 }
 
 .big-text{
@@ -118,4 +108,38 @@ Banner
 }
 .small-text{
   font-size: 25px;
+}
+
+/***********************************
+Responsive media queries
+***********************************/
+
+@media (min-width: 20px) and (max-width: 450px) {
+    .text-dec {
+    font-size: 20px;
+    }
+    .big-text {
+    font-size: 30px;
+    }
+    .small-text {
+    font-size: 14px;
+    }
+    .intro-para {
+    font-size: 30px;
+    }
+    .header-section p{
+        font-size: 14px;
+    }
+    .heading {
+    margin-bottom: 20px;
+    }
+    .modal-sm {
+    width: 300px;
+    }
+    .navbar-default .navbar-brand{
+        margin-left: 10px;
+    }
+    .navbar-default .navbar-nav > li > a{
+        text-align: center;
+    }
 }
