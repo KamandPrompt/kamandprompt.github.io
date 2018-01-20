@@ -2,12 +2,13 @@
 BasicStyling
 *****************************/
 
-body {
+body, html{
   margin: 0;
   color: #717f86;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -97,7 +98,7 @@ Navigation bar
 }
 
 .navlink a:hover::after {
-  width:77%
+  width: 77%;
 }
 
 
@@ -106,13 +107,16 @@ Banner
 ************************************/
 .banner{
   background: url('../img/banner1.png') no-repeat center top;
+  background-attachment: fixed;
   background-size: cover;
   min-height: 580px;
   position: relative;
+  height: 100%;
 }
 .bg-color{
   background-color: RGBA(12, 11, 11, 0.82);
   min-height: 580px;
+  height: 100%;
 }
 .text-dec{
   font-size: 40px;
@@ -140,6 +144,54 @@ Banner
 .small-text{
   font-size: 25px;
 }
+
+/***********************************
+Footer
+***********************************/
+.footerhead {
+  margin: 0px; 
+  background-color: black;
+  color: white; 
+  height: 100px;
+  text-align: center;
+}
+.medialink-container {
+  display: inline;
+  font-size: 30px;
+  width: 100%;
+}
+
+.fa {
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 10px;
+  
+}
+
+.fa:hover {
+  opacity: 0.80;
+  text-decoration: none;
+}
+
+.fa-facebook-f, .fa-github {
+  color: #1E88E5;
+}
+.footerend {
+  margin: 0px;
+  background-color: black;
+  padding: 1px;
+  color: white;
+  text-align: center;
+}
+.footerlink a {
+  color: #1E88E5;
+}
+.footerlink a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 
 /***********************************
 Responsive media queries
@@ -172,5 +224,9 @@ Responsive media queries
     }
     .navbar-default .navbar-nav > li > a{
         text-align: center;
+    }
+    .banner 
+    {
+      background-attachment: scroll;
     }
 }
