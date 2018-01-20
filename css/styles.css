@@ -142,6 +142,38 @@ Banner
 }
 
 /***********************************
+Footer
+***********************************/
+footer{
+  background-color: #222;
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+footer section{
+  text-align: center;
+}
+
+.social{
+  padding-top: 10px;
+  text-align: center;
+}
+
+.social-link{
+  padding: 10px 20px 0px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin:auto;
+  color: #999999;
+}
+.social-link:hover{
+  color: #e0e0e0;
+}
+
+/***********************************
 Responsive media queries
 ***********************************/
 
