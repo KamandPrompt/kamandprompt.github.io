@@ -150,10 +150,11 @@ Footer
 ***********************************/
 .footerhead {
   margin: 0px; 
-  background-color: black;
+  background-color: #222;
   color: white; 
   height: 100px;
   text-align: center;
+  border-top: #fff solid 1px;
 }
 .medialink-container {
   display: inline;
@@ -179,7 +180,7 @@ Footer
 }
 .footerend {
   margin: 0px;
-  background-color: black;
+  background-color: #222;
   padding: 1px;
   color: white;
   text-align: center;
