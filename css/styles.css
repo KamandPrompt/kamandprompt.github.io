@@ -150,12 +150,11 @@ Banner
 /***********************************
 Footer
 ***********************************/
-<<<<<<< HEAD
 .footerhead {
   margin: 0px;
   background-color: black;
   color: white;
-  height: 260px;
+  height: 300px;
   text-align: center;
   border-top: 2px solid white;
 }
@@ -245,8 +244,6 @@ Footer
   color: #fff;
   text-decoration: none;
 }
-
-=======
 footer{
   background-color: #222;
   position: relative;
@@ -275,7 +272,6 @@ footer section{
 .social-link:hover{
   color: #e0e0e0;
 }
->>>>>>> 5a12958237f4e61a7f23feea36fcc597123f3b2a
 
 /***********************************
 Responsive media queries
