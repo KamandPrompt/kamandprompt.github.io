@@ -31,6 +31,14 @@ Navigation bar
   z-index: 2;
 }
 
+#open {
+  color: #888;
+}
+
+.navbar-right {
+  margin-right: -80px;
+}
+
 .navbar-default {
   background-color: #222;
 }
