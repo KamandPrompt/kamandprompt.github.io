@@ -28,6 +28,7 @@ Navigation bar
 ************************************/
 .navbar-default .navbar-brand {
   color: #1E88E5;
+  z-index: 2;
 }
 
 .navbar-default {
@@ -117,6 +118,7 @@ Banner
   background-color: RGBA(12, 11, 11, 0.82);
   min-height: 580px;
   height: 100%;
+  z-index:1;
 }
 .text-dec{
   font-size: 40px;
@@ -149,24 +151,75 @@ Banner
 Footer
 ***********************************/
 .footerhead {
-  margin: 0px; 
+  margin: 0px;
   background-color: black;
-  color: white; 
-  height: 100px;
+  color: white;
+  height: 300px;
   text-align: center;
+  border-top: 2px solid white;
 }
+
+.footerWrapper {
+  display: block;
+}
+
+.row1 {
+  float:left;
+}
+
+.row2 {
+  text-align:left;
+  float:right;
+  padding-left:10px;
+}
+
+.footerhead h3 {
+  text-align:left;
+  padding-left: 10px;
+  padding-bottom: 6px;
+  margin-bottom: 6px;
+  color: white;
+}
+
+.footerNav {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.footerhead ul.quick-links li{
+	padding: 8px 0;
+  text-align:left;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+.footerhead ul.quick-links li:hover{
+	padding: 8px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+.footerhead ul.quick-links li a i{
+	margin-right: 5px;
+}
+.footerhead ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
 .medialink-container {
   display: inline;
   font-size: 30px;
   width: 100%;
 }
 
+
 .fa {
   width: 30px;
   text-align: center;
   text-decoration: none;
-  margin: 10px 10px;
-  
+  margin: 0px 10px;
+
 }
 
 .fa:hover {
@@ -191,7 +244,34 @@ Footer
   color: #fff;
   text-decoration: none;
 }
+footer{
+  background-color: #222;
+  position: relative;
+  font-family: 'Dosis', sans-serif;
+  font-size: 18px;
+  margin: 0 auto;
+}
 
+footer section{
+  text-align: center;
+}
+
+.social{
+  padding-top: 10px;
+  text-align: center;
+}
+
+.social-link{
+  padding: 10px 20px 0px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin:auto;
+  color: #999999;
+}
+.social-link:hover{
+  color: #e0e0e0;
+}
 
 /***********************************
 Responsive media queries
@@ -225,7 +305,7 @@ Responsive media queries
     .navbar-default .navbar-nav > li > a{
         text-align: center;
     }
-    .banner 
+    .banner
     {
       background-attachment: scroll;
     }
