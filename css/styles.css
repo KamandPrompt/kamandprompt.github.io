@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6{
   color: #4B4B4C;
 }
 a{
-  color: #1E88E5;
+  color: #ffffff;
 }
 a:hover, a:focus{
   color: #1E88E5;
@@ -27,7 +27,7 @@ a:hover, a:focus{
 Navigation bar
 ************************************/
 .navbar-default .navbar-brand {
-  color: #1E88E5;
+  color: #999999;
   z-index: 2;
 }
 
@@ -236,7 +236,10 @@ Footer
 }
 
 .fa-facebook-f, .fa-github {
-  color: #1E88E5;
+  color: #999999;
+}
+.fa-facebook-f:focus, .fa-github:focus, .fa-facebook-f:hover, .fa-github:hover {
+  color: #5e5e5e;
 }
 .footerend {
   margin: 0px;
