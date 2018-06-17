@@ -1,0 +1,43 @@
+.banner{
+  background: url('../gsoc/img/bg.jpg') no-repeat center top;
+  background-attachment: fixed;
+  background-size: cover;
+  max-height: 500px;
+  position: relative;
+  height: 100%;
+}
+
+.bg-color{
+  background-color: transparent;
+  max-height: 500px;
+  height: 100%;
+}
+
+.text-dec ,.intro-para{
+  color: black !important;
+}
+
+a {
+  text-decoration: none;
+  color: #ececec !important;
+}
+
+.navbar-default {
+  background-color: #222 !important;
+}
+
+.icon {
+  color: #3498db !important;
+}
+
+.footerhead {
+  height: 60px !important;
+}
+
+.footerWrapper {
+  padding-top: 10px;
+}
+
+hr {
+  height: 1.5px !important; 
+}
