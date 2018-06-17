@@ -41,3 +41,7 @@ a {
 hr {
   height: 1.5px !important; 
 }
+
+img {
+  width: auto;
+}
