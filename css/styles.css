@@ -26,38 +26,46 @@ a:hover, a:focus{
 /***********************************
 Navigation bar
 ************************************/
-.navbar-default .navbar-brand {
-  color: #999999;
+.navbar-brand > embed, img {
+  padding: 2px 2px;
+  width: 100%;
+  margin: 1px 20px;
+}
+
+.navbar-brand {
+  display: inline-block;
+  width: 196px;
+}
+
+.navbar-default {
+  color: #000000;
   z-index: 2;
 }
 
 #open {
-  color: #888;
-}
-
-.navbar-right {
-  margin-right: -80px;
+  color: rgb(56, 56, 56);
 }
 
 .navbar-default {
-  background-color: #222;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px 0.5px #000;
+  border-bottom: none;
 }
 .course-text{
   padding: 84px;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-size: 16px;
   font-weight: 700;
 }
-.navbar-nav > li > a{
+.navbar-nav > li > a {
   padding: 0px;
   margin: 10px 5px;
   padding: 10px 15px;
 }
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover
-{
-  color: #fff;
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, open:hover {
+  color: rgb(65, 65, 65);
 }
 
 .navbar-nav .active a{
@@ -72,7 +80,7 @@ Navigation bar
   padding: 0px;
   height: inherit;
   font-size: 36px;
-  margin: 20px 0px;
+  
 }
 .navbar-default .navbar-brand span{
   font-weight: 100 !important;
@@ -83,7 +91,7 @@ Navigation bar
 
 .navlink {
   display: inline-block;
-  margin-left: 35px;
+  /* margin-left: 35px; */
   position: relative;
 }
 
@@ -95,20 +103,6 @@ Navigation bar
   padding: 25px 0;
 }
 
-.navlink a::after
-{
-  content: '';
-  display: block;
-  width: 0%;
-  background-color: white;
-  height: 1px;
-  position: absolute;
-  transition: all ease-in-out 250ms;
-}
-
-.navlink a:hover::after {
-  width: 77%;
-}
 
 
 /***********************************
@@ -116,6 +110,7 @@ Banner
 ************************************/
 .banner{
   background: url('../img/banner1.png') no-repeat center top;
+  background-color: #fff
   background-attachment: fixed;
   background-size: cover;
   min-height: 580px;
@@ -123,7 +118,7 @@ Banner
   height: 100%;
 }
 .bg-color{
-  background-color: RGBA(12, 11, 11, 0.82);
+  background-color: RGBA(0, 0, 0, 0.70);
   min-height: 580px;
   height: 100%;
   z-index:1;
@@ -164,7 +159,7 @@ Footer
   color: white;
   height: 300px;
   text-align: center;
-  border-top: 2px solid white;
+  border-top: 1px solid white;
 }
 
 .footerWrapper {
