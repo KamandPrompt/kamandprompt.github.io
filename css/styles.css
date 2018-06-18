@@ -80,7 +80,7 @@ Navigation bar
   padding: 0px;
   height: inherit;
   font-size: 36px;
-  
+
 }
 .navbar-default .navbar-brand span{
   font-weight: 100 !important;
@@ -148,6 +148,36 @@ Banner
 }
 .small-text{
   font-size: 25px;
+}
+
+/***********************************
+About Section
+************************************/
+#aboutContainer {
+  height:100%;
+  width:80%;
+  color: #303442;
+  padding-top:65px;
+  padding-bottom: 40px;
+}
+
+#aboutHeader {
+  text-align: center;
+  font-size: 3em;
+  padding-top:30px;
+  padding-bottom: 30px;
+  color: black;
+}
+
+.aboutIcons {
+  font-size:10em;
+}
+
+.rounded-circle {
+  border-radius:50%;
+  width:150px;
+  height: 150px;
+  background: black;
 }
 
 /***********************************
@@ -262,6 +292,10 @@ footer section{
   text-align: center;
 }
 
+.socialIcons {
+  margin:0 10px;
+}
+
 .social{
   padding-top: 10px;
   text-align: center;
@@ -315,4 +349,16 @@ Responsive media queries
     {
       background-attachment: scroll;
     }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .smallScreenBottom {
+    margin-left:25%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #aboutContainer {
+    height:auto;
+  }
 }
