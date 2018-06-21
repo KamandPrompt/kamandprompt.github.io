@@ -342,18 +342,30 @@ Responsive media queries
     .navbar-default .navbar-brand{
         margin-left: 10px;
     }
-    .navbar-default .navbar-nav > li > a{
-        text-align: center;
-    }
     .banner
     {
       background-attachment: scroll;
     }
 }
 
+@media (min-width: 20px) and (max-width: 767px) {
+  .navbar-default .navbar-nav > li > a{
+      text-align: center;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .smallScreenBottom {
     margin-left:25%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 867px) {
+  .navbar-default .navbar-nav > li > a {
+    font-size: 14px;
+  }
+  .navbar-default .navbar-nav > li {
+    margin: 0 -5px;
   }
 }
 
