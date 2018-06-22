@@ -2,7 +2,7 @@
 BasicStyling
 *****************************/
 
-body, html{
+body, html {
   margin: 0;
   color: #717f86;
   font-size: 16px;
@@ -11,22 +11,25 @@ body, html{
   height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6 {
   font-family: Open Sans, sans-serif;
   font-weight: 700;
   color: #4B4B4C;
 }
-a{
+
+a {
   color: #ffffff;
 }
-a:hover, a:focus{
+
+a:hover, a:focus {
   color: #1E88E5;
 }
 
 /***********************************
 Navigation bar
 ************************************/
-.navbar-brand > embed, img {
+
+.navbar-brand>embed, img {
   padding: 2px 2px;
   width: 100%;
   margin: 1px 20px;
@@ -51,24 +54,28 @@ Navigation bar
   box-shadow: 0 0 10px 0.5px #000;
   border-bottom: none;
 }
-.course-text{
+
+.course-text {
   padding: 84px;
 }
-.navbar-default .navbar-nav > li > a {
+
+.navbar-default .navbar-nav>li>a {
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-weight: 700;
 }
-.navbar-nav > li > a {
+
+.navbar-nav>li>a {
   padding: 0px;
   margin: 10px 5px;
   padding: 10px 15px;
 }
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover, open:hover {
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, open:hover {
   color: rgb(65, 65, 65);
 }
 
-.navbar-nav .active a{
+.navbar-nav .active a {
   background: none !important;
   color: #1E88E5 !important;
   outline: none;
@@ -80,11 +87,12 @@ Navigation bar
   padding: 0px;
   height: inherit;
   font-size: 36px;
-
 }
-.navbar-default .navbar-brand span{
+
+.navbar-default .navbar-brand span {
   font-weight: 100 !important;
 }
+
 .navbar {
   margin-bottom: 0px;
 }
@@ -103,79 +111,85 @@ Navigation bar
   padding: 25px 0;
 }
 
-
-
 /***********************************
 Banner
 ************************************/
-.banner{
+
+.banner {
   background: url('../img/banner1.png') no-repeat center top;
-  background-color: #fff
-  background-attachment: fixed;
+  background-color: #fff;
+  §background-attachment: fixed;
   background-size: cover;
   min-height: 580px;
   position: relative;
   height: 100%;
 }
-.bg-color{
+
+.bg-color {
   background-color: RGBA(0, 0, 0, 0.70);
   min-height: 580px;
   height: 100%;
-  z-index:1;
+  z-index: 1;
 }
-.text-dec{
+
+.text-dec {
   font-size: 40px;
   padding: 10px 20px;
   margin: 15px 0;
   color: #fff;
 }
-.text-border{
+
+.text-border {
   display: inline-block;
   margin-top: 150px;
 }
-.intro-para{
+
+.intro-para {
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 45px;
   color: #fff;
   margin-top: 30px;
 }
-.quote .btn{
+
+.quote .btn {
   background-color:
 }
 
-.big-text{
+.big-text {
   font-size: 35px;
 }
-.small-text{
+
+.small-text {
   font-size: 25px;
 }
 
 /***********************************
 About Section
 ************************************/
+
 #aboutContainer {
-  height:100%;
-  width:80%;
+  height: 100%;
+  width: 80%;
   color: #303442;
-  padding-top:65px;
+  padding-top: 65px;
   padding-bottom: 40px;
 }
 
 #aboutHeader {
   text-align: center;
   font-size: 3em;
-  padding-top:30px;
+  padding-top: 30px;
   padding-bottom: 30px;
   color: black;
 }
 
 .aboutIcons {
-  font-size:10em;
+  font-size: 10em;
 }
 
 .rounded-circle {
-  border-radius:50%;
-  width:150px;
+  border-radius: 50%;
+  width: 150px;
   height: 150px;
   background: black;
 }
@@ -183,11 +197,12 @@ About Section
 /***********************************
 Footer
 ***********************************/
+
 .footerhead {
   margin: 0px;
   background-color: black;
   color: white;
-  height: 300px;
+  height: auto;
   text-align: center;
   border-top: 1px solid white;
 }
@@ -197,17 +212,18 @@ Footer
 }
 
 .row1 {
-  float:left;
+  float: left;
 }
 
 .row2 {
-  text-align:left;
-  float:right;
-  padding-left:10px;
+  text-align: left;
+  padding-left: 10px;
+  margin-right: 0;
+  width: auto;
 }
 
 .footerhead h3 {
-  text-align:left;
+  text-align: left;
   padding-left: 10px;
   padding-bottom: 6px;
   margin-bottom: 6px;
@@ -215,29 +231,33 @@ Footer
 }
 
 .footerNav {
-    color: #ffffff;
-    text-decoration: none !important;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
 }
 
-.footerhead ul.quick-links li{
-	padding: 8px 0;
-  text-align:left;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
+.footerhead ul.quick-links li {
+  padding: 8px 0;
+  text-align: left;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+  transition: .5s all ease;
 }
-.footerhead ul.quick-links li:hover{
-	padding: 8px 0;
-	margin-left:5px;
-	font-weight:700;
+
+.footerhead ul.quick-links li:hover {
+  padding: 8px 0;
+  margin-left: 5px;
+  margin-right: -5px;
+  font-weight: 700;
 }
-.footerhead ul.quick-links li a i{
-	margin-right: 5px;
+
+.footerhead ul.quick-links li a i {
+  margin-right: 5px;
 }
+
 .footerhead ul.quick-links li:hover a i {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .medialink-container {
@@ -246,13 +266,15 @@ Footer
   width: 100%;
 }
 
+#spacing {
+  margin-right: 15%;
+}
 
 .fa {
   width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 0px 10px;
-
 }
 
 .fa:hover {
@@ -263,9 +285,11 @@ Footer
 .fa-facebook-f, .fa-github {
   color: #999999;
 }
+
 .fa-facebook-f:focus, .fa-github:focus, .fa-facebook-f:hover, .fa-github:hover {
   color: #5e5e5e;
 }
+
 .footerend {
   margin: 0px;
   background-color: black;
@@ -273,14 +297,17 @@ Footer
   color: white;
   text-align: center;
 }
+
 .footerlink a {
   color: #1E88E5;
 }
+
 .footerlink a:hover {
   color: #fff;
   text-decoration: none;
 }
-footer{
+
+footer {
   background-color: #222;
   position: relative;
   font-family: 'Dosis', sans-serif;
@@ -288,28 +315,29 @@ footer{
   margin: 0 auto;
 }
 
-footer section{
+footer section {
   text-align: center;
 }
 
 .socialIcons {
-  margin:0 10px;
+  margin: 0 10px;
 }
 
-.social{
+.social {
   padding-top: 10px;
   text-align: center;
 }
 
-.social-link{
+.social-link {
   padding: 10px 20px 0px;
   font-size: 30px;
   text-align: center;
   text-decoration: none;
-  margin:auto;
+  margin: auto;
   color: #999999;
 }
-.social-link:hover{
+
+.social-link:hover {
   color: #e0e0e0;
 }
 
@@ -318,62 +346,89 @@ Responsive media queries
 ***********************************/
 
 @media (min-width: 20px) and (max-width: 450px) {
-    .text-dec {
+  .text-dec {
     font-size: 20px;
-    }
-    .big-text {
+  }
+  .big-text {
     font-size: 30px;
-    }
-    .small-text {
+  }
+  .small-text {
     font-size: 14px;
-    }
-    .intro-para {
+  }
+  .intro-para {
     font-size: 30px;
-    }
-    .header-section p{
-        font-size: 14px;
-    }
-    .heading {
+  }
+  .header-section p {
+    font-size: 14px;
+  }
+  .heading {
     margin-bottom: 20px;
-    }
-    .modal-sm {
+  }
+  .modal-sm {
     width: 300px;
-    }
-    .navbar-default .navbar-brand{
-        margin-left: 10px;
-    }
-    .banner
-    {
-      background-attachment: scroll;
-    }
+  }
+  .navbar-default .navbar-brand {
+    margin-left: 10px;
+  }
+  .banner {
+    background-attachment: scroll;
+  }
 }
 
 @media (min-width: 20px) and (max-width: 767px) {
-  .navbar-default .navbar-nav > li > a{
-      text-align: center;
+  .navbar-default .navbar-nav>li>a {
+    text-align: center;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 767px) {
+  .footerWrapper {
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 459px) {
+  .footerWrapper {
+    font-size: 14px;
+  }
+  .footerhead h3 {
+    font-size: 20px;
+  }
+  #spacing {
+    margin-right: 17%;
+  }
+  #rights {
+    display: block;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
   .smallScreenBottom {
-    margin-left:25%;
+    margin-left: 25%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 867px) {
-  .navbar-default .navbar-nav > li > a {
+  .navbar-default .navbar-nav>li>a {
     font-size: 14px;
   }
-  .navbar-default .navbar-nav > li {
+  .navbar-default .navbar-nav>li {
     margin: 0 -5px;
+  }
+}
+
+@media (min-width: 768px) {
+  .row2 {
+    float: right;
+    width: auto;
   }
 }
 
 @media (max-width: 1199px) {
   #aboutContainer {
-    height:auto;
+    height: auto;
   }
   .aboutColumn {
-    padding-bottom:25px;
+    padding-bottom: 25px;
   }
 }
