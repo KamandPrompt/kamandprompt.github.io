@@ -191,13 +191,20 @@ About Section
 
 #aboutContainer {
   height: 100%;
-  width: 80%;
+  width: 100%;
   color: #303442;
   padding-top: 65px;
   padding-bottom: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#aboutHeader {
+.row {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contentHeader {
   text-align: center;
   font-size: 3em;
   padding-top: 30px;
@@ -215,6 +222,61 @@ About Section
   height: 150px;
   background: black;
 }
+
+/***********************************
+Project Section
+************************************/
+
+#projectContainer {
+  height:auto;
+  width:100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 65px;
+  padding-bottom: 40px;
+}
+
+.box {
+  background:#fff;
+  transition:all 0.2s ease;
+  border:2px dashed #dadada;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-clip: padding-box;
+  padding:0 20px 20px 20px;
+  min-height:340px;
+}
+
+.box:hover {
+  border:2px solid #525C7A;
+}
+
+.box span.box-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.box .box-content {
+  padding: 16px;
+  border-radius: 0 0 2px 2px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+}
+.box .box-content p {
+  color:#515c66;
+  text-transform:none;
+}
+
+.repoLink {
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /***********************************
 Footer
@@ -447,5 +509,11 @@ Responsive media queries
   }
   .aboutColumn {
     padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .box .box-content p {
+    text-align:justify;
   }
 }
