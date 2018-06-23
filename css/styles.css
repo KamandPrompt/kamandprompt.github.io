@@ -523,3 +523,9 @@ Responsive media queries
     text-align: justify;
   }
 }
+
+@media (max-width: 450px) {
+  .tag-title {
+    font-size: 23px;
+  }
+}
