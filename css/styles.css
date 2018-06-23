@@ -116,7 +116,6 @@ Banner
 ************************************/
 
 .banner {
-
   min-height: 400px;
   height: 100%;
   width: 100%;
@@ -149,7 +148,6 @@ Banner
   min-height: 400px;
   height: 100%;
   position: relative;
-
 }
 
 .bg-color {
@@ -177,6 +175,7 @@ Banner
   color: #fff;
   margin-top: 30px;
 }
+
 .big-text {
   font-size: 35px;
 }
@@ -228,8 +227,8 @@ Project Section
 ************************************/
 
 #projectContainer {
-  height:auto;
-  width:100%;
+  height: auto;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 65px;
@@ -237,27 +236,27 @@ Project Section
 }
 
 .box {
-  background:#fff;
-  transition:all 0.2s ease;
-  border:2px dashed #dadada;
+  background: #fff;
+  transition: all 0.2s ease;
+  border: 2px dashed #dadada;
   margin-top: 20px;
   margin-bottom: 20px;
   box-sizing: border-box;
   border-radius: 5px;
   background-clip: padding-box;
-  padding:0 20px 20px 20px;
-  min-height:340px;
+  padding: 0 20px 20px 20px;
+  min-height: 340px;
 }
 
 .box:hover {
-  border:2px solid #525C7A;
+  border: 2px solid #525C7A;
 }
 
 .box span.box-title {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 300;
-    text-transform: uppercase;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .box .box-content {
@@ -266,9 +265,10 @@ Project Section
   background-clip: padding-box;
   box-sizing: border-box;
 }
+
 .box .box-content p {
-  color:#515c66;
-  text-transform:none;
+  color: #515c66;
+  text-transform: none;
 }
 
 .repoLink {
@@ -276,7 +276,6 @@ Project Section
   margin-left: auto;
   margin-right: auto;
 }
-
 
 /***********************************
 Footer
@@ -353,11 +352,18 @@ Footer
   margin-right: 15%;
 }
 
-.fab {
+.socialIcons {
   width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 32px 10px;
+}
+
+.fa {
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 10px;
 }
 
 .fa:hover {
@@ -514,6 +520,6 @@ Responsive media queries
 
 @media (max-width: 700px) {
   .box .box-content p {
-    text-align:justify;
+    text-align: justify;
   }
 }
