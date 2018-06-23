@@ -116,13 +116,40 @@ Banner
 ************************************/
 
 .banner {
-  background: url('../img/banner1.png') no-repeat center top;
-  background-color: #fff;
-  §background-attachment: fixed;
-  background-size: cover;
-  min-height: 580px;
-  position: relative;
+
+  min-height: 400px;
   height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.dark h1 {
+  font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+  font-size: 8vw;
+  align-self: flex-end;
+  margin-bottom: 48px;
+  color: #fff;
+}
+
+.dark img {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: darken;
+}
+
+.dark {
+  background: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  min-height: 400px;
+  height: 100%;
+  position: relative;
+
 }
 
 .bg-color {
@@ -150,11 +177,6 @@ Banner
   color: #fff;
   margin-top: 30px;
 }
-
-.quote .btn {
-  background-color:
-}
-
 .big-text {
   font-size: 35px;
 }
@@ -263,7 +285,6 @@ Footer
 .medialink-container {
   display: inline;
   font-size: 30px;
-  width: 100%;
 }
 
 #spacing {
