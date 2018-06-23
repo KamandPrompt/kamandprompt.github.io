@@ -291,11 +291,11 @@ Footer
   margin-right: 15%;
 }
 
-.fa {
+.fab {
   width: 30px;
   text-align: center;
   text-decoration: none;
-  margin: 0px 10px;
+  margin: 32px 10px;
 }
 
 .fa:hover {
@@ -304,11 +304,11 @@ Footer
 }
 
 .fa-facebook-f, .fa-github {
-  color: #999999;
+  color: #ffffff;
 }
 
 .fa-facebook-f:focus, .fa-github:focus, .fa-facebook-f:hover, .fa-github:hover {
-  color: #5e5e5e;
+  color: #1E88E5;
 }
 
 .footerend {
@@ -338,10 +338,6 @@ footer {
 
 footer section {
   text-align: center;
-}
-
-.socialIcons {
-  margin: 0 10px;
 }
 
 .social {
