@@ -495,7 +495,7 @@ Responsive media queries
   }
 }
 
-@@media (max-width: 700px) {
+@media (max-width: 700px) {
   .box .box-content p {
     text-align:justify;
   }
