@@ -409,11 +409,11 @@ Footer
   text-decoration: none;
 }
 
-.fa-facebook-f, .fa-github {
+.fa-facebook, .fa-github {
   color: #ffffff;
 }
 
-.fa-facebook-f:focus, .fa-github:focus, .fa-facebook-f:hover, .fa-github:hover {
+.fa-facebook:focus, .fa-github:focus, .fa-facebook:hover, .fa-github:hover {
   color: #1E88E5;
 }
 
