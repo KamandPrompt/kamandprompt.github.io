@@ -116,7 +116,6 @@ Banner
 ************************************/
 
 .banner {
-
   min-height: 400px;
   height: 100%;
   width: 100%;
@@ -149,7 +148,6 @@ Banner
   min-height: 200px;
   height: 100%;
   position: relative;
-
 }
 
 .bg-color {
@@ -177,6 +175,7 @@ Banner
   color: #fff;
   margin-top: 30px;
 }
+
 .big-text {
   font-size: 35px;
 }
@@ -191,13 +190,20 @@ About Section
 
 #aboutContainer {
   height: 100%;
-  width: 80%;
+  width: 100%;
   color: #303442;
   padding-top: 65px;
   padding-bottom: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#aboutHeader {
+.row {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contentHeader {
   text-align: center;
   font-size: 3em;
   padding-top: 30px;
@@ -214,6 +220,99 @@ About Section
   width: 150px;
   height: 150px;
   background: black;
+}
+
+/***********************************
+Project Section
+************************************/
+
+#projectContainer {
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 65px;
+  padding-bottom: 40px;
+}
+
+.box {
+  background: #fff;
+  transition: all 0.2s ease;
+  border: 2px dashed #dadada;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-clip: padding-box;
+  padding: 0 20px 20px 20px;
+  min-height: 340px;
+}
+
+.box:hover {
+  border: 2px solid #525C7A;
+}
+
+.box span.box-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.box .box-content {
+  padding: 16px;
+  border-radius: 0 0 2px 2px;
+  background-clip: padding-box;
+  box-sizing: border-box;
+}
+
+.box .box-content p {
+  color: #515c66;
+  text-transform: none;
+}
+
+.repoLink {
+  width: 134px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white !important;
+}
+
+.btn-social {
+  position: relative;
+  padding-left: 44px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+
+.btn-social :first-child {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 32px;
+  line-height: 34px;
+  font-size: 1.6em;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.btn-github {
+  color: #fff;
+  background-color: #575757;
+  border-color: rgba(0, 0, 0, 0.2)
+}
+
+.btn-github:hover, .btn-github:focus, .btn-github:active, .btn-github.active, .open .dropdown-toggle.btn-github {
+  color: #fff;
+  background-color: #303030;
+  border-color: rgba(0, 0, 0, 0.2)
+}
+
+.btn-github:active, .btn-github.active, .open .dropdown-toggle.btn-github {
+  background-image: none
 }
 
 /***********************************
@@ -291,11 +390,18 @@ Footer
   margin-right: 15%;
 }
 
-.fab {
+.socialIcons {
   width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 32px 10px;
+}
+
+.fa {
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 10px;
 }
 
 .fa:hover {
@@ -303,11 +409,11 @@ Footer
   text-decoration: none;
 }
 
-.fa-facebook-f, .fa-github {
+.fa-facebook, .fa-github {
   color: #ffffff;
 }
 
-.fa-facebook-f:focus, .fa-github:focus, .fa-facebook-f:hover, .fa-github:hover {
+.fa-facebook:focus, .fa-github:focus, .fa-facebook:hover, .fa-github:hover {
   color: #1E88E5;
 }
 
@@ -447,5 +553,17 @@ Responsive media queries
   }
   .aboutColumn {
     padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .box .box-content p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 450px) {
+  .tag-title {
+    font-size: 23px;
   }
 }

@@ -33,7 +33,7 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="navlink"><a href="#aboutContainer"><span id="open"> &lt; </span>About<span id="open"> /&gt; </span></a></li>
             <li class="navlink"><a href="/gsoc"><span id="open"> &lt; </span>GSoC<span id="open"> /&gt; </a></li>
-            <li class="navlink"><a href="#projects"><span id="open"> &lt; </span>Projects<span id="open"> /&gt; </a></li>
+            <li class="navlink"><a href="#projectContainer"><span id="open"> &lt; </span>Projects<span id="open"> /&gt; </a></li>
             <li class="navlink"><a href="#team"><span id="open"> &lt; </span>Team<span id="open"> /&gt; </a></li>
             <li class="navlink"><a href="#contact"><span id="open"> &lt; </span>Contact Us<span id="open"> /&gt; </a></li>
           </ul>
@@ -47,8 +47,8 @@
 
   <!--Banner-->
   <div class="dark">
-      <h1>echo "Hello World!"</h1>
-      <!-- <img src="img/bg1.jpg"> -->
+    <h1>echo "Hello World!"</h1>
+    <!-- <img src="img/bg1.jpg"> -->
   </div>
   <div class="banner">
     <div class="bg-color">
@@ -71,9 +71,10 @@
   </div>
   <!--/ Banner-->
   <!-- Contents -->
-  <div class="container" id="aboutContainer">
-    <h2 id="aboutHeader">About Us</h2>
-    <div class="row">
+  <!-- About Us -->
+  <div class="container contentContainer" id="aboutContainer">
+    <h2 class="contentHeader">About Us</h2>
+    <div class="row container">
       <div class="col-lg-4 col-sm-6 text-center mb-4 aboutColumn">
         <i class="far fa-lightbulb aboutIcons"> </i>
         <h3>Innovate</h3>
@@ -91,6 +92,76 @@
       </div>
     </div>
   </div>
+  <!-- About Us End -->
+  <!-- Projects -->
+  <div class="container contentContainer" id="projectContainer">
+    <h2 class="contentHeader">Projects</h2>
+    <div class="row">
+      <div class="container-fluid text-center">
+        <div class="box">
+          <div class="box-content">
+            <h1 class="tag-title">Inventory Management</h1>
+            <hr>
+            <p>Inventory Manager is an online portal for the proper management of the equipments of the different clubs of IIT Mandi. It provides a platform for users to book and issue equipments, and allows the club coordinators to issue the booked item
+              and keep a tab on the issuers and return dates. Inventory Manager has been built in Node.js and uses MongoDb for object based database.</p>
+            <br />
+            <a href="https://github.com/KamandPrompt/InventoryManager" class="btn btn-block btn-social btn-github repoLink text-center">
+              <i class="fab fa-github"></i> Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid text-center">
+        <div class="box">
+          <div class="box-content">
+            <h1 class="tag-title">Contacts Directory</h1>
+            <hr>
+            <p>An intranet directory that provide contact details of everyone at IIT Mandi to everyone at IIT Mandi. It employs a real-time elastic search to suggest predictions on the basis of characters already typed in segregated by batches and faculty/student.
+              It has been built on PHP and uses MongoDb for database.</p>
+            <br />
+            <a href="https://github.com/KamandPrompt/contacts-directory" class="btn btn-block btn-social btn-github repoLink text-center">
+              <i class="fab fa-github"></i> Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid text-center">
+        <div class="box">
+          <div class="box-content">
+            <h1 class="tag-title">Baat-Cheet</h1>
+            <hr>
+            <p>Baat Cheet is an anonymous chat platform that that allows people to chat anonymously in a common channel on any topics or form separate groups to discuss things of common interest protecting their privacy. It had seen more than 100 active
+              members at one time on day zero. Baat Cheet has been built in Node.js and employs socket.io for real time communication.</p>
+            <br />
+            <a href="https://github.com/KamandPrompt/baat-cheet" class="btn btn-block btn-social btn-github repoLink text-center">
+              <i class="fab fa-github"></i> Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container-fluid text-center">
+        <div class="box">
+          <div class="box-content">
+            <h1 class="tag-title">SNTC Server (Ongoing) </h1>
+            <hr />
+            <p>This is a large scale ongoing project to setup the student server for SNTC IIT Mandi. It is aim to provide most open source communication and knowledge based tools internally on this server and also provide students to host their projects
+              on it with a Heroku type way. It also includes a dream to have our students' own oauth system much in line of OpenID.</p>
+            <br />
+            <a href="https://github.com/KamandPrompt" class="btn btn-block btn-social btn-github repoLink text-center">
+              <i class="fab fa-github"></i> Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Projects End -->
   <!-- Contents End -->
 
 
@@ -103,8 +174,8 @@
           <ul class="list-unstyled quick-links">
             <li><a href="#" class="footerNav"><i class="fa fa-angle-double-right"></i>Link1</a></li>
             <li><a href="#" class="footerNav"><i class="fa fa-angle-double-right"></i>Link2</a></li>
-            <li><a href="#" class="footerNav"><i class="fa fa-angle-double-right"></i>Link3</a></li>
-          </ul>
+            <li><a href="https://www.facebook.com/groups/KamandPrompt/" class="footerNav"  target="_blank"><i class="fas fa-users socialIcons fa"></i> Join the group on facebook</a></li>
+          </ul> 
         </div>
       </div>
       <div>
@@ -123,8 +194,8 @@
 
   <footer class="footerend">
     <div class="medialink-container">
-        <a href="https://www.facebook.com/groups/KamandPrompt/" target="_blank"><i class="fab fa-facebook-f socialIcons"></i></a>
-        <a href="https://github.com/KamandPrompt/" target="_blank"><i class="fab fa-github socialIcons"></i></a>
+      <a href="https://www.facebook.com/prog.iitmandi/" target="_blank"><i class="fab fa-facebook socialIcons"></i></a>
+      <a href="https://github.com/KamandPrompt/" target="_blank"><i class="fab fa-github socialIcons"></i></a>
     </div>
     <p>
       &copy; 2018 <a class="footerlink" href="#"><strong>Kamand</strong>Prompt</a> - <a class="footerlink" href="https://www.iitmandi.ac.in" target="_blank">IIT Mandi</a>. <span id="rights">All Rights Reserved.</span>
