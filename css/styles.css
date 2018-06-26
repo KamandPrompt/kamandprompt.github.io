@@ -145,14 +145,14 @@ Banner
   background: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
-  min-height: 400px;
+  min-height: 200px;
   height: 100%;
   position: relative;
 }
 
 .bg-color {
   background-color: RGBA(0, 0, 0, 0.70);
-  min-height: 580px;
+  min-height: 200px;
   height: 100%;
   z-index: 1;
 }
@@ -462,11 +462,11 @@ Footer
   text-decoration: none;
 }
 
-.fa-facebook-f, .fa-github {
+.fa-facebook, .fa-github {
   color: #ffffff;
 }
 
-.fa-facebook-f:focus, .fa-github:focus, .fa-facebook-f:hover, .fa-github:hover {
+.fa-facebook:focus, .fa-github:focus, .fa-facebook:hover, .fa-github:hover {
   color: #1E88E5;
 }
 
