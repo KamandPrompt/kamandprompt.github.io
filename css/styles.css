@@ -315,6 +315,59 @@ Project Section
   background-image: none
 }
 
+
+/***********************************
+Team Section
+************************************/
+
+#teamContainer {
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 65px;
+  padding-bottom: 40px;
+}
+
+.designation {
+  font-size: 2.5em;
+}
+
+.team-img {
+  margin: 1px 0px;
+  transition: .5s ease;
+}
+
+.team-box {
+  text-align: center;
+}
+
+.member {
+  float: none;
+  display: inline-block;
+  margin-bottom: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.social-button {
+  font-size: 150%;
+  color: #000000;
+}
+
+.member h3 {
+  font-size: 19px;
+}
+
+.team-img:hover {
+  opacity: 0.6;
+}
+
+.team-img {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /***********************************
 Footer
 ***********************************/
@@ -415,6 +468,11 @@ Footer
 
 .fa-facebook-f:focus, .fa-github:focus, .fa-facebook-f:hover, .fa-github:hover {
   color: #1E88E5;
+}
+
+.social-button {
+  font-size: 150%;
+  color: #000000;
 }
 
 .footerend {
@@ -565,5 +623,18 @@ Responsive media queries
 @media (max-width: 450px) {
   .tag-title {
     font-size: 23px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 450px) {
+  .team-img {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .member {
+    margin-bottom: 2em;
   }
 }
