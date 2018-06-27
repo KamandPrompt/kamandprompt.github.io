@@ -99,7 +99,6 @@ Navigation bar
 
 .navlink {
   display: inline-block;
-  /* margin-left: 35px; */
   position: relative;
 }
 
@@ -188,7 +187,7 @@ Banner
 About Section
 ************************************/
 
-#aboutContainer {
+#about {
   height: 100%;
   width: 100%;
   color: #303442;
@@ -226,13 +225,14 @@ About Section
 Project Section
 ************************************/
 
-#projectContainer {
+#projects {
   height: auto;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 65px;
   padding-bottom: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .box {
@@ -320,13 +320,14 @@ Project Section
 Team Section
 ************************************/
 
-#teamContainer {
+#team {
   height: auto;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 65px;
   padding-bottom: 40px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .designation {
@@ -603,7 +604,7 @@ Responsive media queries
 }
 
 @media (max-width: 1199px) {
-  #aboutContainer {
+  #about {
     height: auto;
   }
   .aboutColumn {
