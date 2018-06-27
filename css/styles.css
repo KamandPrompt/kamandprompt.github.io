@@ -315,6 +315,55 @@ Project Section
   background-image: none
 }
 
+
+/***********************************
+Team Section
+************************************/
+
+#teamContainer {
+  height: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 65px;
+  padding-bottom: 40px;
+}
+
+.designation {
+  font-size: 2.5em;
+}
+
+.team-img {
+  margin: 1px 0px;
+  transition: .5s ease;
+}
+
+.team-box {
+  text-align: center;
+}
+
+.member {
+  float: none;
+  display: inline-block;
+  margin-bottom: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.social-button {
+  font-size: 150%;
+  color: #000000;
+}
+
+.member h3 {
+  font-size: 19px;
+}
+
+.team-img {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
 /***********************************
 Footer
 ***********************************/
@@ -413,8 +462,14 @@ Footer
   color: #ffffff;
 }
 
-.fa-facebook:focus, .fa-github:focus, .fa-facebook:hover, .fa-github:hover {
+.fa-facebook:focus, .fa-facebook-f:focus, .fa-github:focus, .fa-facebook:hover, .fa-facebook-f:hover, .fa-github:hover {
   color: #1E88E5;
+}
+
+.social-button {
+  font-size: 150%;
+  color: #000000;
+  margin: 5px 10px 10px 10px;
 }
 
 .footerend {
@@ -565,5 +620,39 @@ Responsive media queries
 @media (max-width: 450px) {
   .tag-title {
     font-size: 23px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 600px) {
+  .team-img {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+@media (max-width: 599px) and (min-width: 500px) {
+  .team-img {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .team-img {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .team-img {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .member {
+    margin-bottom: 2em;
   }
 }
