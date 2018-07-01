@@ -391,7 +391,7 @@ Footer
   text-align: left;
   padding-left: 10px;
   margin-right: 0;
-  width: auto;
+  width: 380px;
 }
 
 .footerhead h3 {
@@ -601,7 +601,7 @@ Responsive media queries
 @media (min-width: 768px) {
   .row2 {
     float: right;
-    width: auto;
+    width: 380px;
   }
 }
 
