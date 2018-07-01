@@ -62,7 +62,6 @@ Navigation bar
 .navbar-default .navbar-nav>li>a {
   color: rgb(0, 0, 0);
   font-size: 16px;
-  font-weight: 700;
 }
 
 .navbar-nav>li>a {
@@ -100,6 +99,7 @@ Navigation bar
 .navlink {
   display: inline-block;
   position: relative;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .navlink a {
@@ -108,6 +108,7 @@ Navigation bar
   text-decoration: none;
   text-transform: uppercase;
   padding: 25px 0;
+  font-weight: inherit !important;
 }
 
 /***********************************
@@ -465,6 +466,7 @@ Footer
 
 .fa-facebook:focus, .fa-facebook-f:focus, .fa-github:focus, .fa-facebook:hover, .fa-facebook-f:hover, .fa-github:hover {
   color: #1E88E5;
+  text-decoration: none;
 }
 
 .social-button {
