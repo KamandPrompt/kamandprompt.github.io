@@ -9,6 +9,7 @@ body, html {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   height: 100%;
+  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -126,35 +127,47 @@ Banner
 .dark h1 {
   font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
   font-size: 8vw;
-  align-self: flex-end;
-  margin-bottom: 48px;
-  color: #fff;
+  text-align: center;
+  align-self: center;
+  margin-top: 120px;
+  color: rgb(255, 0, 0);
 }
 
-.dark img {
+.dark>.image {
+  background-image: url('../img/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   margin: 0;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  mix-blend-mode: darken;
+  mix-blend-mode: exclusion;
 }
 
 .dark {
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   min-height: 200px;
   height: 100%;
   position: relative;
 }
+.dark img {
+  padding: 0;
+}
 
 .bg-color {
-  background-color: RGBA(0, 0, 0, 0.70);
+  background-color: rgba(0, 0, 0, 0.48);
   min-height: 200px;
   height: 100%;
   z-index: 1;
+}
+
+.height100 {
+  height: 100%;
 }
 
 .text-dec {
@@ -173,7 +186,7 @@ Banner
   font-family: 'Alegreya Sans', sans-serif;
   font-size: 45px;
   color: #fff;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 .big-text {
@@ -181,7 +194,21 @@ Banner
 }
 
 .small-text {
-  font-size: 25px;
+  font-size: 22px;
+}
+
+.bottom-center {
+  display: inline-block;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  right: 10%;
+}
+
+.no-style a:hover {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 /***********************************
