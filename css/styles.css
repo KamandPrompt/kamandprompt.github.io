@@ -2,14 +2,15 @@
 BasicStyling
 *****************************/
 
-body, html {
+html, body {
   margin: 0;
+  height: 100%;
+  width: 100%;
   color: #717f86;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  height: 100%;
-  width: 100%;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,7 +31,7 @@ a:hover, a:focus {
 Navigation bar
 ************************************/
 
-.navbar-brand>embed, img {
+.navbar-brand>img {
   padding: 2px 2px;
   width: 100%;
   margin: 1px 20px;
@@ -418,7 +419,6 @@ Footer
   text-align: left;
   padding-left: 10px;
   margin-right: 0;
-  width: 380px;
 }
 
 .footerhead h3 {
@@ -457,6 +457,9 @@ Footer
 
 .footerhead ul.quick-links li:hover a i {
   font-weight: 700;
+}
+.footerhead>.container {
+  padding: 0;
 }
 
 .medialink-container {
@@ -553,7 +556,7 @@ footer section {
 Responsive media queries
 ***********************************/
 
-@media (min-width: 20px) and (max-width: 450px) {
+@media screen and (max-width: 450px) {
   .text-dec {
     font-size: 20px;
   }
@@ -583,13 +586,13 @@ Responsive media queries
   }
 }
 
-@media (min-width: 20px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .navbar-default .navbar-nav>li>a {
     text-align: center;
   }
 }
 
-@media (min-width: 460px) and (max-width: 767px) {
+@media screen and (min-width: 460px) and (max-width: 767px) {
   .footerWrapper {
     margin-left: 10%;
   }
