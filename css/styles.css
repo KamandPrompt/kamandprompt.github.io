@@ -690,3 +690,10 @@ Responsive media queries
     margin-bottom: 2em;
   }
 }
+
+@media (min-height: 710px) {
+  #about {
+    height: auto;
+    padding-bottom: 120px;
+  }
+}
