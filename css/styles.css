@@ -469,7 +469,7 @@ Footer
 }
 
 #spacing {
-  margin-right: 15%;
+  margin-right: 50px;
 }
 
 .socialIcons {
@@ -605,9 +605,6 @@ Responsive media queries
   }
   .footerhead h3 {
     font-size: 20px;
-  }
-  #spacing {
-    margin-right: 17%;
   }
   #rights {
     display: block;
