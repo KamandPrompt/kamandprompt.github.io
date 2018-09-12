@@ -135,11 +135,17 @@ Banner
 }
 
 .dark>.image {
-  background-image: url('../img/background.png');
+  background-image: url(../img/bg4.jpg), linear-gradient(rgb(255, 0, 0), rgb(0, 0, 0));
+  background-blend-mode: multiply;
   background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
   background-repeat: no-repeat;
-  background-position: center;
-  margin: 0;
+  background-position: center top;
+  margin: 0px;
   position: absolute;
   top: 0;
   left: 0;
