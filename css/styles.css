@@ -180,10 +180,11 @@ Banner
 
 .text-dec {
   font-size: 60px;
-  padding: 20px 30px;
-  margin: 15px 0;
-  color: #fff;
+  padding: 20px 10px;
+  margin: 10px 0;
   font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  color: palegreen;
+    -webkit-box-reflect:below 10px;
 
 }
 
