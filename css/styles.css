@@ -219,6 +219,30 @@ Banner
   font-weight: bold;
 }
 
+.scroll-down {
+  padding-bottom: 40px;
+  background-image: url("../img/scroll.svg");
+  background-position: bottom 10px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  transition: 0.2s ease-out all;
+}
+
+.scroll-down:hover,
+.scroll-down:focus {
+  color: white;
+  outline: none;
+}
+
+.scroll-down:hover {
+  text-decoration: none;
+  background-position: bottom center;  
+}
+
+.scroll-down:focus {
+  text-decoration: underline;
+}
+
 /***********************************
 About Section
 ************************************/
