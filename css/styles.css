@@ -380,7 +380,8 @@ Project Section
 .btn-notgithub:hover, .btn-notgithub:focus, .btn-notgithub:active, .btn-notgithub.active, .open .dropdown-toggle.btn-notgithub {
   color: #fff;
   background-color: #575757;
-  border-color: rgba(0, 0, 0, 0)
+  border-color: rgba(0, 0, 0, 0);
+  cursor: default
 }
 
 .btn-github:active, .btn-github.active, .open .dropdown-toggle.btn-github {
