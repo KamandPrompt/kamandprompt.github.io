@@ -646,15 +646,31 @@ Responsive media queries
     margin-left: 25%;
   }
 }
-
-@media (min-width: 768px) and (max-width: 867px) {
-  .navbar-default .navbar-nav>li>a {
-    font-size: 14px;
-  }
-  .navbar-default .navbar-nav>li {
+@media (min-width: 768px) and (max-width: 1199px) {
+    .navbar-default .navbar-nav>li {
     margin: 0 -5px;
   }
+
 }
+@media (min-width: 978px) and (max-width: 1199px){
+  .navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 810px) and (max-width: 980px){
+  .navbar-default .navbar-nav>li>a {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 812px){
+  .navbar-default .navbar-nav>li>a {
+    font-size: 10px;
+  }
+}
+
+
 
 @media (min-width: 768px) {
   .row2 {
