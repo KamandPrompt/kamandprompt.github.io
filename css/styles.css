@@ -236,7 +236,7 @@ Banner
 
 .scroll-down:hover {
   text-decoration: none;
-  background-position: bottom center;  
+  background-position: bottom center;
 }
 
 .scroll-down:focus {
@@ -410,6 +410,8 @@ Team Section
 .team-img {
   margin: 1px 0px;
   transition: .5s ease;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .team-box {
@@ -431,11 +433,6 @@ Team Section
 
 .member h3 {
   font-size: 19px;
-}
-
-.team-img {
-  padding-left: 45px;
-  padding-right: 45px;
 }
 
 /***********************************
