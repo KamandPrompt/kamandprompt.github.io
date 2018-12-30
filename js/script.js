@@ -19,14 +19,12 @@ $(document).ready(function() {
      }
    }
  });
+ $("#loader").show();
  fillContributors();
 });
 
 function fillContributors()
 {
-  $.ajaxSetup({
-    async: false
-  });
   $.getJSON('https://api.github.com/repos/kamandprompt/kamandprompt.github.io/stats/contributors',
   function(data) {
       data.sort();
@@ -39,17 +37,11 @@ function fillContributors()
         for(i = 0; i<3; ++iter, ++i)
         {
           var login = data[iter].author.login, commits = data[iter].total;
-          $.getJSON('https://api.github.com/users/'+login, function(user) {
-            name = user.name;
-            avatar = user.avatar_url;
-            if(name=="null")
-            {
-              name=login;
-            }
+          var avatar = data[iter].author.avatar_url;
             var newChild = "\
             <div class=\"col-lg-3 col-sm-4 text-center member\">\
               <img class=\"img-circle img-responsive img-center team-img\" src=\" " + avatar + "\" alt=\"\">\
-              <h3>" + name + "</h3>\
+              <h3>" + login + "</h3>\
               <h4>Commits: " + commits + "</h3>\
               <div>\
                 <a target=\"_blank\" href=\"https://github.com/" + login + " \"><i class=\"fab fa-github social-button\"></i></a>\
@@ -57,10 +49,10 @@ function fillContributors()
             </div>\
             ";
             contributorsDiv.innerHTML += newChild;
-          });
         }
         contributorsDiv.innerHTML += "</div>";
       }
+  $("#loader").hide();
   });
 }
 
