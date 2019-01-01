@@ -426,6 +426,10 @@ Team Section
   padding-right: 20px;
 }
 
+a.github-profile {
+  color: #4B4B4C;
+}
+
 .social-button {
   font-size: 150%;
   color: #000000;
@@ -690,6 +694,15 @@ Responsive media queries
   .row2 {
     float: right;
     width: 380px;
+  }
+
+  .contributor-div {
+   width: 19.5% !important;
+  }
+
+  .contributor-div .team-img {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
 
