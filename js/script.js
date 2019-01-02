@@ -27,8 +27,23 @@ function fillContributors()
 {
   $.getJSON('https://api.github.com/repos/kamandprompt/kamandprompt.github.io/stats/contributors',
   function(data) {
-      data.sort();
-      data.reverse();
+      try {
+        data.sort();
+        data.reverse();
+      } catch (e) {
+        $.ajaxSetup({
+          async: false
+        });
+        $.getJSON('https://api.github.com/repos/kamandprompt/kamandprompt.github.io/stats/contributors',
+        function(dataNew) {
+          data = dataNew;
+          $.ajaxSetup({
+            async: true
+          });
+          data.sort();
+          data.reverse();
+        });
+      }
       var contributorsDiv = document.getElementById("contributors");
       var rows, iter = 0;
       for(rows = 0; rows<2; ++rows)
