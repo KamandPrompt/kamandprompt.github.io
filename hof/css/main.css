@@ -1,0 +1,104 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://Alvarez.is
+ *
+ * Project Name: SHIELD - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * Date: 02-11-2013
+ * URL: http://blacktie.co/
+ */
+
+
+/* ==========================================================================
+   Base Styles and Bootstrap Modifications
+   ========================================================================== */
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+ img {
+    vertical-align: middle;
+}
+
+.img-circle {
+  width: auto !important;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+ textarea {
+    resize: vertical;
+}
+
+#y2016 {
+    margin-bottom: 4%;
+}
+
+
+/* ==========================================================================
+   General styles
+   ========================================================================== */
+
+.centered {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================================================
+   Box Sections
+   ========================================================================== */
+
+.white h1 {
+	padding-top: 35px;
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+
+@media screen and (max-width:1050px), screen and (max-device-width:1050px){
+	body .header{background-attachment: scroll;}
+}
+
+
+/*ipad portrait*/
+@media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait){
+	.header{background-attachment: scroll;}
+}
