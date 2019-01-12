@@ -236,7 +236,7 @@ Banner
 
 .scroll-down:hover {
   text-decoration: none;
-  background-position: bottom center;  
+  background-position: bottom center;
 }
 
 .scroll-down:focus {
@@ -410,6 +410,8 @@ Team Section
 .team-img {
   margin: 1px 0px;
   transition: .5s ease;
+  padding-left: 45px;
+  padding-right: 45px;
 }
 
 .team-box {
@@ -424,6 +426,10 @@ Team Section
   padding-right: 20px;
 }
 
+a.github-profile {
+  color: #4B4B4C;
+}
+
 .social-button {
   font-size: 150%;
   color: #000000;
@@ -433,9 +439,8 @@ Team Section
   font-size: 19px;
 }
 
-.team-img {
-  padding-left: 45px;
-  padding-right: 45px;
+#loader {
+  z-index: 3;
 }
 
 /***********************************
@@ -659,20 +664,45 @@ Responsive media queries
     margin-left: 25%;
   }
 }
-
-@media (min-width: 768px) and (max-width: 867px) {
-  .navbar-default .navbar-nav>li>a {
-    font-size: 14px;
-  }
-  .navbar-default .navbar-nav>li {
+@media (min-width: 768px) and (max-width: 1199px) {
+    .navbar-default .navbar-nav>li {
     margin: 0 -5px;
   }
+
 }
+@media (min-width: 978px) and (max-width: 1199px){
+  .navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 810px) and (max-width: 980px){
+  .navbar-default .navbar-nav>li>a {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 812px){
+  .navbar-default .navbar-nav>li>a {
+    font-size: 10px;
+  }
+}
+
+
 
 @media (min-width: 768px) {
   .row2 {
     float: right;
     width: 380px;
+  }
+
+  .contributor-div {
+   width: 19.5% !important;
+  }
+
+  .contributor-div .team-img {
+    padding-left: 20%;
+    padding-right: 20%;
   }
 }
 

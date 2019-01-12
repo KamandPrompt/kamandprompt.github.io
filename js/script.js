@@ -19,7 +19,54 @@ $(document).ready(function() {
      }
    }
  });
+ $("#loader").show();
+ fillContributors();
 });
+
+function fillContributors()
+{
+  $.getJSON('https://api.github.com/repos/kamandprompt/kamandprompt.github.io/stats/contributors',
+  function(data) {
+      try {
+        data.sort();
+        data.reverse();
+      } catch (e) {
+        $.ajaxSetup({
+          async: false
+        });
+        $.getJSON('https://api.github.com/repos/kamandprompt/kamandprompt.github.io/stats/contributors',
+        function(dataNew) {
+          data = dataNew;
+          $.ajaxSetup({
+            async: true
+          });
+          data.sort();
+          data.reverse();
+        });
+      }
+      var contributorsDiv = document.getElementById("contributors");
+      var rows, iter = 0;
+      for(rows = 0; rows<2; ++rows)
+      {
+        contributorsDiv.innerHTML += "<div class=\"row team-box\">";
+        for(i = 0; i<5; ++iter, ++i)
+        {
+          var login = data[iter].author.login, commits = data[iter].total;
+          var avatar = data[iter].author.avatar_url;
+            var newChild = "\
+            <div class=\"col-lg-2 col-sm3 text-center member contributor-div\">\
+              <img class=\"img-circle img-responsive img-center team-img\" src=\" " + avatar + "\" alt=\"\">\
+              <h4><a class=\"github-profile\" target=\"_blank\" href=\"https://github.com/" + login + " \">@" + login + "</a></h3>\
+              <h5>Commits: " + commits + "</h5>\
+            </div>\
+            ";
+            contributorsDiv.innerHTML += newChild;
+        }
+        contributorsDiv.innerHTML += "</div>";
+      }
+  $("#loader").hide();
+  });
+}
 
 function cursorAnimation() {
   $("#cursor").animate({
