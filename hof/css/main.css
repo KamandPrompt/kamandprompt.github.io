@@ -1,0 +1,136 @@
+.centered {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.white h1 {
+	padding-top: 40px;
+}
+
+
+/* Section Dividers */
+.section-divider {
+    z-index: 999;
+    width: 100%;
+    display: table;
+    max-height: 450px;
+    border-bottom: 2px solid #E6EAED;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    margin-top: 62px;
+
+
+    background-position: center center;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-attachment: relative;
+
+    text-align: center;
+}
+
+.textdivider h1 {
+	padding-top: 50px;
+	color: white;
+	font-size: 100px;
+}
+
+.textdivider p {
+	color: white;
+	font-size: 40px;
+}
+
+
+/* Section Dividers Backgrounds */
+
+.divider1 {
+	background-image: url('../img/bg.jpg');
+}
+
+::-moz-selection {
+    background: #f2c2c9;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+::selection {
+    background: #16a085;
+    color: #a4003a;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+ img {
+    vertical-align: middle;
+}
+
+.img-circle {
+  width: auto !important;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+ textarea {
+    resize: vertical;
+}
+
+#y2016 {
+    margin-bottom: 4%;
+}
+
+.centered {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.white h1 {
+	padding-top: 35px;
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+
+@media screen and (max-width:1050px), screen and (max-device-width:1050px){
+	body .header{background-attachment: scroll;}
+}
+
+
+/*ipad portrait*/
+@media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait){
+	.header{background-attachment: scroll;}
+}
