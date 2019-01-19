@@ -1,43 +1,8 @@
-/*
- * Author: Carlos Alvarez
- * URL: http://Alvarez.is
- *
- * Project Name: SHIELD - Free Bootstrap 3 Theme
- * Version: 1.0
- * Date: 02-11-2013
- * URL: http://blacktie.co/
- */
-
-
-/* ==========================================================================
-   Base Styles and Bootstrap Modifications
-   ========================================================================== */
-
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-<<<<<<< HEAD
-
-/* ==========================================================================
-   General styles
-   ========================================================================== */
-
-
-
 .centered {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
-/* ==========================================================================
-   Box Sections
-   ========================================================================== */
 
 .white h1 {
 	padding-top: 40px;
@@ -55,8 +20,8 @@
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-    padding-top: 200px;
-    padding-bottom: 154px;
+    padding-top: 80px;
+    padding-bottom: 100px;
     margin-top: 62px;
 
 
@@ -92,14 +57,9 @@
 /* Section Dividers Backgrounds */
 
 .divider1 {
-	background-image: url('../img/bg.jpg')
+	background-image: url('../img/bg.jpg');
 }
 
-
-/* ==========================================================================
-   MEDIA QUERIES
-   ========================================================================== */
-=======
 ::-moz-selection {
     background: #f2c2c9;
     color: #a4003a;
@@ -149,20 +109,11 @@
     margin-bottom: 4%;
 }
 
-
-/* ==========================================================================
-   General styles
-   ========================================================================== */
-
 .centered {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
-
-/* ==========================================================================
-   Box Sections
-   ========================================================================== */
 
 .white h1 {
 	padding-top: 35px;
@@ -183,4 +134,3 @@
 @media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait){
 	.header{background-attachment: scroll;}
 }
->>>>>>> 1f6b124a59a32afdadee0d5dc5c4a1f9e092fde7
