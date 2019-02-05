@@ -185,6 +185,12 @@ Banner
   color: #fff;
 }
 
+.text-desc {
+  font-size: 20px;
+  margin: 15px 0;
+  color: #fff;
+}
+
 .text-border {
   display: inline-block;
   margin-top: 150px;
@@ -295,7 +301,7 @@ Project Section
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.box {
+.box-content {
   background: #fff;
   transition: all 0.2s ease;
   border: 2px dashed #dadada;
@@ -308,25 +314,25 @@ Project Section
   min-height: 340px;
 }
 
-.box:hover {
+.box-content:hover {
   border: 2px solid #525C7A;
 }
 
-.box span.box-title {
+.box-content span.box-title {
   color: #fff;
   font-size: 24px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-.box .box-content {
+.box-content {
   padding: 16px;
   border-radius: 0 0 2px 2px;
   background-clip: padding-box;
   box-sizing: border-box;
 }
 
-.box .box-content p {
+.box-content p {
   color: #515c66;
   text-transform: none;
 }
@@ -608,6 +614,9 @@ Responsive media queries
 @media screen and (max-width: 450px) {
   .text-dec {
     font-size: 20px;
+  }
+  .text-desc {
+    font-size: 15px;
   }
   .big-text {
     font-size: 30px;
