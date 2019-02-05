@@ -28,7 +28,7 @@ function fillContributors()
   $.getJSON('https://api.github.com/repos/kamandprompt/kamandprompt.github.io/stats/contributors',
   function(data) {
       try {
-        data.sort();
+        data.sort((a,b) => a.total - b.total);
         data.reverse();
       } catch (e) {
         $.ajaxSetup({
@@ -40,7 +40,7 @@ function fillContributors()
           $.ajaxSetup({
             async: true
           });
-          data.sort();
+          data.sort((a,b) => a.total - b.total);
           data.reverse();
         });
       }
