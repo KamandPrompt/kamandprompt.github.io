@@ -376,7 +376,7 @@ Project Section
   border-color: rgba(0, 0, 0, 0.2)
 }
 
-.btn-github:hover, .btn-github:focus, .btn-github:active, .btn-github.active, .open .dropdown-toggle.btn-github {
+.contributors:hover, .btn-github:hover, .btn-github:focus, .btn-github:active, .btn-github.active, .open .dropdown-toggle.btn-github {
   color: #fff;
   background-color: #303030;
   border-color: rgba(0, 0, 0, 0.2)
@@ -393,6 +393,16 @@ Project Section
   background-image: none
 }
 
+.contributors_container {
+	text-align: center;
+}
+
+.contributors{
+  font-size: 24px;
+  color: #fff;
+  background-color: #404040;
+  border-color: rgba(0, 0, 0, 0.5)
+}
 
 /***********************************
 Team Section
