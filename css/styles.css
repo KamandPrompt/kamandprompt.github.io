@@ -135,7 +135,7 @@ Banner
 }
 
 .dark>.image {
-  background-image: url(../img/bg4.jpg), linear-gradient(rgb(255, 0, 0), rgb(0, 0, 0));
+  background-image: url(../img/bg5.png);
   background-blend-mode: multiply;
   background-size: cover;
   position: absolute;
@@ -168,7 +168,6 @@ Banner
 }
 
 .bg-color {
-  background-color: rgba(0, 0, 0, 0.57);
   min-height: 200px;
   height: 100%;
   z-index: 1;
