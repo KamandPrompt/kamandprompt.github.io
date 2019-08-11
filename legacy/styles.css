@@ -1,0 +1,84 @@
+.collapsible {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  margin-left: 35%;
+  width: 30%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible:hover {
+  background-color: #808080;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+html, body {
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+}
+
+.descrip
+{
+  font-family: Open Sans, sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contentHeader
+{
+  font-family: Open Sans, sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contentHeaderdesignation
+{
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #000000;
+  text-align: center;
+}
+
+.coloredbg
+{
+  background-color: #215573;
+  color: #ffffff;
+}

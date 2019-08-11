@@ -408,7 +408,7 @@ Project Section
 Team Section
 ************************************/
 
-#team {
+#team,#legacy {
   height: auto;
   width: 100%;
   margin-left: auto;
