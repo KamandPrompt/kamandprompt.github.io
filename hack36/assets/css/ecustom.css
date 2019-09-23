@@ -1,0 +1,43 @@
+#header > h1 > img {
+	padding-top : 1em;
+	height: 3em;
+}
+
+#header > h1 > img, #banner > div > div > img {
+	filter: invert(1);
+	max-width: 100%;
+}
+
+#header > h1 > img:hover, #banner > div > div > img:hover {
+	filter : invert(.5) sepia(1) saturate(5) hue-rotate(175deg)
+}
+
+#one > div > a, #one > div > a > img {
+	border-radius: unset;
+}
+
+#one > div > a > img:hover {
+	filter : drop-shadow(2px 4px 6px black);
+}
+
+#one > div > a {
+	border-radius: 10px;
+	background-color: white;
+}
+
+.align-L {
+	text-align: left;
+	font-size: 1.5em;
+}
+
+.big-txt {
+	font-size: 1.5em;
+}
+
+/* sponsor logo adjustments */
+.hackerEarth {
+	padding-top: 1rem;
+	/* filter : invert(.5) sepia(1) saturate(5) hue-rotate(175deg) */
+	filter: invert(1);
+}
+
