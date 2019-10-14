@@ -785,3 +785,7 @@ Responsive media queries
     padding-bottom: 120px;
   }
 }
+
+#madewith {
+  font-size : 100px;
+}
