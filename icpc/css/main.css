@@ -24,11 +24,18 @@
 }
 
 a{
-    color: black;
+    color: blue;
     text-decoration: underline
 }
 
+.links a {
+    font-weight: bold;
+    color: #a53030;
+    text-decoration: none
+}
+
 .second-nav a{
+    color: #a53030;
     text-decoration: none;
 }
 
@@ -47,6 +54,9 @@ a{
     text-align: justify
 }
 
+.left {
+    text-align: left
+}
 ::-moz-selection {
     background: #f2c2c9;
     color: #a4003a;
