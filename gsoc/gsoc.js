@@ -72,37 +72,37 @@ for (year in data) {
 
             var img = document.createElement("img");
             img.className = "img img-circle";
-            img.src = data[year][names[c]]['src'];
+            img.src = data[year][names[count]]['src'];
             img.height = 120;
             img.width = 120;
-            img.alt = data[year][names[c]]['alt'];
+            img.alt = data[year][names[count]]['alt'];
 
             var h4 = document.createElement("h4"); //H4 tag
             var b = document.createElement("b"); //Bold tag
-            var pname = document.createTextNode(names[c]) //Name of the person
+            var pname = document.createTextNode(names[count]) //Name of the person
             h4.appendChild(b);
             h4.appendChild(pname);
 
-            var facebook-link = document.createElement("a");
-            facebook-link.href = data[year][names[c]]['fb'];
-            facebook-link.className = "fab fa-facebook-f social-button";
+            var facebook_link = document.createElement("a");
+            facebook_link.href = data[year][names[count]]['fb'];
+            facebook_link.className = "fab fa-facebook-f social-button";
 
-            var github-link = document.createElement("a");
-            github-link.href = data[year][names[c]]['gh'];
-            github-link.className = "social-button fab fa-github";
+            var github_link = document.createElement("a");
+            github_link.href = data[year][names[count]]['gh'];
+            github_link.className = "social-button fab fa-github";
 
             var p = document.createElement("p");
-            var ptext = document.createTextNode(data[year][names[c]]['org']);
+            var ptext = document.createTextNode(data[year][names[count]]['org']);
             p.appendChild(ptext);
 
             person.appendChild(img);
             person.appendChild(br);
             person.appendChild(h4);
-            person.appendChild(facebook-link);
-            person.appendChild(github-link);
+            person.appendChild(facebook_link);
+            person.appendChild(github_link);
             person.appendChild(p);
 
-            c += 1;
+            count += 1;
             row.appendChild(person);
         }
         container.appendChild(row);
@@ -119,34 +119,34 @@ for (year in data) {
 
             var img = document.createElement("img");
             img.className = "img img-circle";
-            img.src = data[year][names[c]]['src'];
+            img.src = data[year][names[count]]['src'];
             img.height = 120;
             img.width = 120;
-            img.alt = data[year][names[c]]['alt'];
+            img.alt = data[year][names[count]]['alt'];
 
             var h4 = document.createElement("h4");
             var b = document.createElement("b");
-            var pname = document.createTextNode(names[c])
+            var pname = document.createTextNode(names[count])
             h4.appendChild(b);
             h4.appendChild(pname);
 
-            var facebook-link = document.createElement("a");
-            facebook-link.href = data[year][names[c]]['fb'];
-            facebook-link.className = "fab fa-facebook-f social-button";
+            var facebook_link = document.createElement("a");
+            facebook_link.href = data[year][names[count]]['fb'];
+            facebook_link.className = "fab fa-facebook-f social-button";
 
-            var github-link = document.createElement("a");
-            github-link.href = data[year][names[c]]['gh'];
-            github-link.className = "social-button fab fa-github";
+            var github_link = document.createElement("a");
+            github_link.href = data[year][names[count]]['gh'];
+            github_link.className = "social-button fab fa-github";
 
             var p = document.createElement("p");
-            var ptext = document.createTextNode(data[year][names[c]]['org']);
+            var ptext = document.createTextNode(data[year][names[count]]['org']);
             p.appendChild(ptext);
 
             person.appendChild(img);
             person.appendChild(br);
             person.appendChild(h4);
-            person.appendChild(facebook-link);
-            person.appendChild(github-link);
+            person.appendChild(facebook_link);
+            person.appendChild(github_link);
             person.appendChild(p);
 
             count += 1;
@@ -170,37 +170,37 @@ for (year in data) {
 
             var img = document.createElement("img");
             img.className = "img img-circle";
-            img.src = data[year][names[c]]['src'];
+            img.src = data[year][names[count]]['src'];
             img.height = 120;
             img.width = 120;
-            img.alt = data[year][names[c]]['alt'];
+            img.alt = data[year][names[count]]['alt'];
 
             var h4 = document.createElement("h4");
             var b = document.createElement("b");
-            var pname = document.createTextNode(names[c])
+            var pname = document.createTextNode(names[count])
             h4.appendChild(b);
             h4.appendChild(pname);
 
-            var facebook-link = document.createElement("a");
-            facebook-link.href = data[year][names[c]]['fb'];
-            facebook-link.className = "fab fa-facebook-f social-button";
+            var facebook_link = document.createElement("a");
+            facebook_link.href = data[year][names[count]]['fb'];
+            facebook_link.className = "fab fa-facebook-f social-button";
 
-            var github-link = document.createElement("a");
-            github-link.href = data[year][names[c]]['gh'];
-            github-link.className = "social-button fab fa-github";
+            var github_link = document.createElement("a");
+            github_link.href = data[year][names[count]]['gh'];
+            github_link.className = "social-button fab fa-github";
 
             var p = document.createElement("p");
-            var ptext = document.createTextNode(data[year][names[c]]['org']);
+            var ptext = document.createTextNode(data[year][names[count]]['org']);
             p.appendChild(ptext);
 
             person.appendChild(img);
             person.appendChild(br);
             person.appendChild(h4);
-            person.appendChild(facebook-link);
-            person.appendChild(github-link);
+            person.appendChild(facebook_link);
+            person.appendChild(github_link);
             person.appendChild(p);
 
-            c += 1;
+            count += 1;
             row.appendChild(person);
         }
 
@@ -228,34 +228,34 @@ for (year in data) {
 
             var img = document.createElement("img");
             img.className = "img img-circle";
-            img.src = data[year][names[c]]['src'];
+            img.src = data[year][names[count]]['src'];
             img.height = 120;
             img.width = 120;
-            img.alt = data[year][names[c]]['alt'];
+            img.alt = data[year][names[count]]['alt'];
 
             var h4 = document.createElement("h4");
             var b = document.createElement("b");
-            var pname = document.createTextNode(names[c])
+            var pname = document.createTextNode(names[count])
             h4.appendChild(b);
             h4.appendChild(pname);
 
-            var facebook-link = document.createElement("a");
-            facebook-link.href = data[year][names[c]]['fb'];
-            facebook-link.className = "fab fa-facebook-f social-button";
+            var facebook_link = document.createElement("a");
+            facebook_link.href = data[year][names[count]]['fb'];
+            facebook_link.className = "fab fa-facebook-f social-button";
 
-            var github-link = document.createElement("a");
-            github-link.href = data[year][names[c]]['gh'];
-            github-link.className = "social-button fab fa-github";
+            var github_link = document.createElement("a");
+            github_link.href = data[year][names[count]]['gh'];
+            github_link.className = "social-button fab fa-github";
 
             var p = document.createElement("p");
-            var ptext = document.createTextNode(data[year][names[c]]['org']);
+            var ptext = document.createTextNode(data[year][names[count]]['org']);
             p.appendChild(ptext);
 
             person.appendChild(img);
             person.appendChild(br);
             person.appendChild(h4);
-            person.appendChild(facebook-link);
-            person.appendChild(github-link);
+            person.appendChild(facebook_link);
+            person.appendChild(github_link);
             person.appendChild(p);
 
             c += 1;
