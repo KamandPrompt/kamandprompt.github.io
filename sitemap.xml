@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://pc.iitmandi.co.in/</loc>
+	<lastmod>2020-07-02T19:26:11+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://pc.iitmandi.co.in/index.html</loc>
+	<lastmod>2020-07-02T19:26:11+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://pc.iitmandi.co.in/gsoc/</loc>
+	<lastmod>2020-07-02T19:26:18+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://pc.iitmandi.co.in/icpc/</loc>
+	<lastmod>2020-07-02T19:26:18+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://pc.iitmandi.co.in/icpc/hof.html</loc>
+	<lastmod>2020-07-02T19:26:21+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://pc.iitmandi.co.in/icpc/links.html</loc>
+	<lastmod>2020-07-02T19:26:19+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://pc.iitmandi.co.in/project_contributors/</loc>
+	<lastmod>2020-07-02T19:26:19+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://pc.iitmandi.co.in/project_contributors/index.html</loc>
+	<lastmod>2020-07-02T19:26:19+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://pc.iitmandi.co.in/hof/</loc>
+	<lastmod>2020-07-02T19:26:20+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+</urlset>
