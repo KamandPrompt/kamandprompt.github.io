@@ -1,4 +1,278 @@
-var data = YAML.load('./data.yaml');
+var yaml = `
+9+6 Selections in 2020:
+  Abhijeet Manhas:
+    src: img/people/abhijeetmanhas.jpeg
+    alt: Abhijeet Manhas
+    fb: https://www.facebook.com/astromanahas
+    gh: https://github.com/abhijeetmanhas
+    org: OPENASTRONOMY
+  Ankit Karan:
+    src: img/people/ankitkaran.jpg
+    alt: Ankit Karan
+    fb: https://www.facebook.com/ankit.karan.58
+    gh: https://github.com/karanankit01
+    org: LABLUA
+  Ashutosh Sharma:
+    src: img/people/ashutoshsharma.jpg
+    alt: Ashutosh Sharma
+    fb: https://www.facebook.com/ashutosh.sharma.393950
+    gh: https://github.com/spider0061
+    org: MIFOS INITIATIVE
+  Jai Luthra:
+    src: img/people/jailuthra.jpeg
+    alt: Jai Luthra
+    fb: https://www.facebook.com/jai.luthra.1690
+    gh: https://github.com/JaiLuthra1
+    org: LINUX FOUNDATION
+  Kartik Kathuria:
+    src: img/people/kartikkathuria.jpeg
+    alt: Kartik Kathuria
+    fb: https://www.facebook.com/kartik.kathuria.146
+    gh: https://github.com/kartik1000
+    org: CIVICRM
+  Keshav Garg:
+    src: img/people/keshavgarg.jpeg
+    alt: Keshav Garg
+    fb: https://www.facebook.com/keshav.garg.58555
+    gh: https://github.com/keshav234156
+    org: DIAL
+  Manav Mehta:
+    src: img/people/manavmehta.jpeg
+    alt: Manav Mehta
+    fb: https://www.facebook.com/causticmehta
+    gh: https://github.com/manavmehta
+    org: ZULIP
+  Sambhav Dusad:
+    src: img/people/sambhavdusad.jpeg
+    alt: Sambhav Dusad
+    fb: https://www.facebook.com/samd82
+    gh: https://github.com/dsam82
+    org: LINUX FOUNDATION
+  Suryavanshi Virendrasingh:
+    src: img/people/suryavanshi_virendrasingh.jpg
+    alt: Suryavanshi Virendrasingh
+    fb: https://www.facebook.com/virendrasingh.suryavanshi.1
+    gh: https://github.com/virendrasuryavanshi
+    org: CNCF
+  Abhigyan Khaund:
+    src: img/people/abhigyankhaund.jpg
+    alt: Abhigyan Khaund
+    fb: https://www.facebook.com/abhigyankhaund
+    gh: https://github.com/abhigyank
+    org: (MENTOR) ZULIP
+  Chirag Vashisht:
+    src: img/people/chiragvashist.jpg
+    alt: Chirag Vashisht
+    fb: https://www.facebook.com/SerChirag
+    gh: https://github.com/SerChirag
+    org: (MENTOR) AOSSIE
+  Ritwik Saha:
+    src: img/people/ritwiksaha.jpeg
+    alt: Ritwik Saha
+    fb: https://www.facebook.com/ritwik.rivu
+    gh: https://github.com/ritzvik
+    org: (MENTOR) OPENASTRONOMY
+  Shreyas Bapat:
+    src: img/people/shreyasbapat.jpeg
+    alt: Shreyas Bapat
+    fb: https://www.facebook.com/astroshreyas
+    gh: https://github.com/shreyasbapat
+    org: (MENTOR) OPENASTRONOMY
+  Dheeraj Yadav:
+    src: img/people/dheerajyadav.jpeg
+    alt: Dheeraj Yadav
+    fb: https://www.facebook.com/dheeraj.168
+    gh: https://github.com/dheeraj135
+    org: (MENTOR) LINUX FOUNDATION
+  Rishi Sharma:
+    src: img/people/rishisharma.jpg
+    alt: Rishi Sharma
+    fb: https://www.facebook.com/rishis8
+    gh: https://github.com/rishi-s8
+    org: (MENTOR) OPENASTRONOMY
+5+2 Selections in 2019:
+  Vipul Sharma:
+    src: img/people/vipulsharma.jpg
+    alt: Vipul Sharma
+    fb: https://www.facebook.com/vsvipul555
+    gh: https://github.com/vsvipul
+    org: ZULIP
+  Dheeraj Yadav:
+    src: img/people/dheerajyadav.jpeg
+    alt: Dheeraj Yadav
+    fb: https://www.facebook.com/dheeraj.168
+    gh: https://github.com/dheeraj135
+    org: LINUX FOUNDATION
+  Sharad Shukla:
+    src: img/people/sharadshukla.jpg
+    alt: Sharad Shukla
+    fb: https://www.facebook.com/sharad.shukla.547
+    gh: https://github.com/Sharadd15
+    org: LINUX FOUNDATION
+  Prajjwal Jha:
+    src: img/people/prajjwaljha.jpg
+    alt: Prajjwal Jha
+    fb: https://www.facebook.com/prajjwal.jha
+    gh: https://github.com/JhaPrajjwal
+    org: CERN
+  Gaurav Kumar:
+    src: img/people/gauravkumar.jpg
+    alt: Gaurav Kumar
+    fb: https://www.facebook.com/gauravkumarbtp
+    gh: https://github.com/gaurav047
+    org: LABLUA
+  Abhigyan Khaund:
+    src: img/people/abhigyankhaund.jpg
+    alt: Abhigyan Khaund
+    fb: https://www.facebook.com/abhigyankhaund
+    gh: https://github.com/abhigyank
+    org: (MENTOR) ZULIP
+  Chirag Vashisht:
+    src: img/people/chiragvashist.jpg
+    alt: Chirag Vashisht
+    fb: https://www.facebook.com/SerChirag
+    gh: https://github.com/SerChirag
+    org: (MENTOR) AOSSIE
+11 Selections in 2018:
+  Abhijeet Sharma:
+    src: img/people/abhijeetsharma.jpg
+    alt: Abhijeet Sharma
+    fb: https://www.facebook.com/sharmajeekabeta
+    gh: https://github.com/abhijeet2096
+    org: KDE
+  Akash Sharma:
+    src: img/people/akashsharma.jpg
+    alt: Akash Sharma
+    fb: https://www.facebook.com/profile.php?id=100009811422364
+    gh: https://github.com
+    org: THE LINUX FOUNDATION
+  Aksh Gautam:
+    src: img/people/akshgautam.jpeg
+    alt: Aksh Gautam
+    fb: https://www.facebook.com
+    gh: https://github.com/akshgautam
+    org: MIFOS FOUNDATION
+  Sagar Gupta:
+    src: img/people/sagargupta.jpg
+    alt: Sagar Gupta
+    fb: https://www.facebook.com/sagarvijaygupta
+    gh: https://github.com/sagarvijaygupta
+    org: MOZILLA
+  Priyanshu Khandelwal:
+    src: img/people/priyanshukhandelwal.jpg
+    alt: Priyanshu Khandelwal
+    fb: https://www.facebook.com/priyanshu.khandelwal.35
+    gh: https://github.com/Masquerade0097
+    org: FOSSASIA
+  Sahil Yadav:
+    src: img/people/sahilyadav.jpg
+    alt: Sahil Yadav
+    fb: https://www.facebook.com/me.ydv.5
+    gh: https://github.com
+    org: GNU OCTAVE
+  Swapnil Sharma:
+    src: img/people/swapnilsharma2.jpg
+    alt: Swapnil  Sharma
+    fb: https://www.facebook.com/swapsha96
+    gh: https://github.com/swapsha96
+    org: OPEN ASTRONOMY
+  Abhigyan Khaund:
+    src: img/people/abhigyankhaund.jpg
+    alt: Abhigyan Khaund
+    fb: hhttps://www.facebook.com/abhigyankhaund
+    gh: https://github.com/abhigyank
+    org: ZULIP
+  Chirag Vashisht:
+    src: img/people/chiragvashist.jpg
+    alt: Chirag Vashisht
+    fb: https://www.facebook.com/SerChirag
+    gh: https://github.com/SerChirag
+    org: AOSSIE
+  Lakshay Arora:
+    src: img/people/lakshayarora.jpg
+    alt: Lakshay Arora
+    fb: https://www.facebook.com/profile.php?id=100010723098869
+    gh: https://github.com/nulll-pointer
+    org: PHPMYADMIN
+  Sahil Arora:
+    src: img/people/sahilarora.jpg
+    alt: Sahil Arora
+    fb: https://www.facebook.com/sahilarora.535
+    gh: https://github.com/sahilarora535
+    org: THE LINUX FOUNDATION
+3 Selections in 2017:
+  Pinank Solanki:
+    src: img/people/pinanksolanki.jpg
+    alt: Pinank Solanki
+    fb: https://www.facebook.com/pinank.solanki.9
+    gh: https://github.com/ps2611
+    org: METABRAINZ
+  Ayush Yadav:
+    src: img/people/ayushyadav.jpg
+    alt: Ayush Yadav
+    fb: https://www.facebook.com/AKYIIT
+    gh: https://github.com/AyushYadav
+    org: OPENASTRONOMY
+  Sahil Arora:
+    src: img/people/sahilarora.jpg
+    alt: Sahil Arora
+    fb: https://www.facebook.com/sahilarora.535
+    gh: https://github.com/sahilarora535
+    org: THE LINUX FOUNDATION
+2 Selections in 2016:
+  Mukarram Tailor:
+    src: img/people/mukarramtailor.jpg
+    alt: Mukarram Tailor
+    fb: https://www.facebook.com/mukarram.tailor
+    gh: https://github.com/Mukarr
+    org: UNITEX/GRAMLAB
+  Swapnil Sharma:
+    src: img/people/swapnilsharma1.jpg
+    alt: Swapnil Sharma
+    fb: https://www.facebook.com/swapnil.sharma.12
+    gh: https://github.com
+    org: SUNPY
+Other Programs:
+  Samriddhi Jain:
+    src: img/people/samriddhijain.jpg
+    alt: Samriddhi Jain
+    fb: https://www.facebook.com/samriddhi.jain.798
+    gh: https://github.com/SamriddhiJain
+    org: OUTREACHY 2017 - AOSSIE
+  Suryavanshi Virendrasingh:
+    src: img/people/suryavanshi_virendrasingh.jpg
+    alt: Suryavanshi Virendrasingh
+    fb: https://www.facebook.com/virendrasingh.suryavanshi.1
+    gh: https://github.com/virendrasuryavanshi
+    org: LINUX FOUNDATION CommunityBridge 2019 - CNCF
+  Priyanshu Khandelwal:
+    src: img/people/priyanshukhandelwal.jpg
+    alt: Priyanshu Khandelwal
+    fb: https://www.facebook.com/priyanshu.khandelwal.35
+    gh: https://github.com/Masquerade0097
+    org: LINUX FOUNDATION CommunityBridge 2019 - CNCF
+  Kartik Kathuria:
+    src: img/people/kartikkathuria.jpeg
+    alt: Kartik Kathuria
+    fb: https://www.facebook.com/kartik.kathuria.146
+    gh: https://github.com/kartik1000
+    org: CONTRACT-PHPMYADMIN(2019)
+  Piyush Goyal:
+    src: img/people/piyushgoyal.jpg
+    alt: Piyush Goyal
+    fb: https://www.facebook.com/profile.php?id=100038264761331
+    gh: https://github.com/PIYUSHgoyal16
+    org: LINUX FOUNDATION CommunityBridge 2020 - Stress-NG
+  Yash Varshney:
+    src: img/people/yashvarshney.jpg
+    alt: Yash Varshney
+    fb: https://www.facebook.com/yashboss2000
+    gh: https://github.com/Yash-Varshney
+    org: LINUX FOUNDATION CommunityBridge 2020 - SPDX
+
+`
+
+var data = YAML.parse(yaml);
 var divtag = document.getElementById("team"); //Main div tag inside the html
 
 for (year in data) {
