@@ -91,3 +91,12 @@ function typeNerase() {
     erase();
   }
 }
+
+function addCopyright() {
+  var date = new Date();
+  var year = date.getFullYear();
+  var copyright;
+  copyright = document.getElementById("copyright");
+  console.log(year);
+  copyright.innerText =year;
+}

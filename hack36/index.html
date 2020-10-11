@@ -25,7 +25,7 @@
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
-<body class="is-preload">
+<body class="is-preload" onload="addCopyright()">
 
 	<!-- Page Wrapper -->
 	<div id="page-wrapper">
@@ -236,7 +236,7 @@
 					<li class="icon brands fa-facebook-f"><a target="_blank" href="https://www.facebook.com/groups/KamandPrompt/">KamandPrompt</a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; KamandPrompt. All rights reserved.</li>
+					<li>&copy; <span id="copyright"></span> KamandPrompt. All rights reserved.</li>
 					<!-- <li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
 				</ul>
 			</div>
@@ -251,6 +251,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script type="text/javascript" src="../js/script.js"></script>
 
 </body>
 
