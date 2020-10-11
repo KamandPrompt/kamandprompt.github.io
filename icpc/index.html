@@ -37,7 +37,7 @@
     <![endif]-->
   </head>
 
-  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main" onload="addCopyright()">
 
   <!-- Nav Bar -->
   <div class="bro">
@@ -68,7 +68,7 @@
     </nav>
   </div>
   <!-- Nav Bar Ends -->
-  
+
     <div class="container-fluid">
       <br>
       <div class="white centered row">
@@ -83,7 +83,7 @@
       </div><!-- /.navbar-collapse -->
       </div>
     </div><!-- /.container-fluid -->
-    
+
     <div class="container-fluid">
         <div class="white centered row">
           <h3 class="centered">International Collegiate Programming Contest @ IIT Mandi</h3>
@@ -100,7 +100,7 @@ The <a href="./training.html">training pages</a> give an insight on how to prepa
             </p>
           </div>
     </div>
-    
+
 
  <!-- Footer -->
  <div class="footerhead">
@@ -111,7 +111,7 @@ The <a href="./training.html">training pages</a> give an insight on how to prepa
          <ul class="list-unstyled quick-links">
            <li><a href="https://kamandprompt.zulipchat.com/" class="footerNav" target="_blank"><i class="fas fa-comments socialIcons fa"></i>Join ZulipChat</a></li>
            <li><a href="https://www.facebook.com/groups/KamandPrompt/" class="footerNav" target="_blank"><i class="fas fa-users socialIcons fa"></i> Join KamandPrompt</a></li>
-         </ul> 
+         </ul>
        </div>
      </div>
      <div>
@@ -133,7 +133,7 @@ The <a href="./training.html">training pages</a> give an insight on how to prepa
      <a href="https://github.com/KamandPrompt/" target="_blank"><i class="fab fa-github socialIcons"></i></a>
    </div>
    <p>
-     &copy; 2019 <a class="footerlink" href="#"><strong>Kamand</strong>Prompt</a> - <a class="footerlink" href="https://www.iitmandi.ac.in" target="_blank">IIT Mandi</a>. <span id="rights">All Rights Reserved.</span>
+     &copy; <span id="copyright"></span> <a class="footerlink" href="#"><strong>Kamand</strong>Prompt</a> - <a class="footerlink" href="https://www.iitmandi.ac.in" target="_blank">IIT Mandi</a>. <span id="rights">All Rights Reserved.</span>
    </p>
  </footer>
  <!-- Footer ends -->
@@ -147,5 +147,6 @@ The <a href="./training.html">training pages</a> give an insight on how to prepa
 	<script type="text/javascript" src="js/retina.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/jquery-func.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
   </body>
 </html>

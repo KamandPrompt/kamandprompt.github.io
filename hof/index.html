@@ -38,7 +38,7 @@
     <![endif]-->
   </head>
 
-  <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+  <body data-spy="scroll" data-offset="0" data-target="#navbar-main" onload="addCopyright()">
 
   <!-- Nav Bar -->
   <div class="bro">
@@ -115,7 +115,7 @@
                 <a href="https://github.com/YashAgrawal0" target=_blank class="social-button fab fa-github"></a>
                 <a href="https://www.linkedin.com/in/yash-agrawal-aab0bb165/" target=_blank class="fab fa-linkedin social-button"></a>
             </div><!-- col-lg-3 -->
-            
+
             <div class="col-lg-3 centered">
                 <img class="img img-circle" src="img/people/AashishKumar.jpg" height="200px" width="200px" alt="Aashish Kumar">
                 <br>
@@ -125,7 +125,7 @@
                 <a href="https://github.com/aashish-ak" target=_blank class="social-button fab fa-github"></a>
                 <a href="https://www.linkedin.com/in/aashish-ak/" target=_blank class="fab fa-linkedin social-button"></a>
             </div><!-- col-lg-3 -->
-            
+
         </div><!-- row -->
         <div class="white centered row">
             <br>
@@ -157,7 +157,7 @@
                 <a href="https://github.com/Lasers67" target=_blank class="social-button fab fa-github"></a>
                 <a href="https://www.linkedin.com/in/pratyush-gaurav-5b749b137/" target=_blank class="fab fa-linkedin social-button"></a>
             </div>
-            
+
             <div class="col-lg-3 centered">
                 <img class="img img-circle" src="img/people/lakshayarora.jpg" height="200px" width="200px" alt="Lakshay Arora">
                 <br>
@@ -391,12 +391,13 @@
       <a href="https://github.com/KamandPrompt/" target="_blank"><i class="fab fa-github socialIcons"></i></a>
     </div>
     <p>
-      &copy; 2019 <a class="footerlink" href="#"><strong>Kamand</strong>Prompt</a> - <a class="footerlink" href="https://www.iitmandi.ac.in" target="_blank">IIT Mandi</a>. <span id="rights">All Rights Reserved.</span>
+      &copy; <span id="copyright"></span> <a class="footerlink" href="#"><strong>Kamand</strong>Prompt</a> - <a class="footerlink" href="https://www.iitmandi.ac.in" target="_blank">IIT Mandi</a>. <span id="rights">All Rights Reserved.</span>
     </p>
   </footer>
   <!-- Footer ends -->
 
   <script type="text/javascript"  src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="../js/script.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 </body>
