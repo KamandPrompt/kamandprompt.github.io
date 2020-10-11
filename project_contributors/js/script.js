@@ -55,18 +55,8 @@ function projectContributors () {
               				<img class=\"img-circle img-responsive img-center team-img\" src=\" " + avatar + "\" alt=\"\">\
               				<h4><a class=\"github-profile\" target=\"_blank\" href=\"https://github.com/" + login + " \">@" + login + "</a></h3>\
 							  <h5>Contributions: " + contributions + "</h5></div>";
+						contributorsDiv.innerHTML += newChild;
 
-						if (login == "HitRam") {
-
-							var newChild = "<div class=\"col-lg-2 col-sm3 text-center member contributor-div\">\
-              					<img class=\"img-circle img-responsive img-center team-img\" src=\" " + "./img/HitRam.jpg" + "\" alt=\"\">\
-              					<h4><a class=\"github-profile\" target=\"_blank\" href=\"https://github.com/" + login + " \">@" + login + "</a></h3>\
-              					<h5>Contributions: " + contributions + "</h5></div>";
-
-							contributorsDiv.innerHTML += newChild;
-						} else {
-							contributorsDiv.innerHTML += newChild;
-						}
 
 					}
 					contributorsDiv.innerHTML += "</div>\ <hr>";
@@ -75,6 +65,3 @@ function projectContributors () {
 		$("#loader").hide();
 	});
 };
-
-
-
