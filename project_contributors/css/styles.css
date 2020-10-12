@@ -10,6 +10,7 @@ html, body {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 
 }
 
@@ -116,30 +117,9 @@ Navigation bar
 /**********************************
 Typography
 **********************************/
-.smt {
-  color: #fff;
+.title {
+  margin-top: 100px;
   text-align: center;
-  background-image: url(../img/bg.jpg);
-  background-size: cover;
-  background-color: #000080;
-  padding-top: 7em;
-  padding-bottom: 5em;
-  background-blend-mode: exclusion;
-  
-}
-
-.smt-r1 {
-  font-size: 7em;
-  line-height: 1.4em;
-  color: #ffffff;
-  text-shadow: 4px 4px 4px #aaa;
-}
-
-.smt-r2 {
-  font-size: 4em;
-  line-height: 1em;
-  color: #ffffff;
-  font-family: 'Tangerine', sans-serif; 
 }
 
 
