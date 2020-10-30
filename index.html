@@ -33,7 +33,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
 </head>
 
-<body>
+<body onload="addCopyright()">
   <!-- Nav Bar -->
   <div class="bro">
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -295,7 +295,7 @@
       <a href="https://github.com/KamandPrompt/" target="_blank"><i class="fab fa-github socialIcons"></i></a>
     </div>
     <p>
-      &copy; 2019 <a class="footerlink" href="#"><strong>Kamand</strong>Prompt</a> - <a class="footerlink" href="https://www.iitmandi.ac.in" target="_blank">IIT Mandi</a>. <span id="rights">All Rights Reserved.</span>
+      &copy; <span id="copyright"></span> <a class="footerlink" href="#"><strong>Kamand</strong>Prompt</a> - <a class="footerlink" href="https://www.iitmandi.ac.in" target="_blank">IIT Mandi</a>. <span id="rights">All Rights Reserved.</span>
     </p>
   </footer>
   <!-- Footer ends -->
