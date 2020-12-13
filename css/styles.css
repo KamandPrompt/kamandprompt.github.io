@@ -106,10 +106,11 @@ Navigation bar
 
 .navlink a {
   display: block;
-  color: #fff;
+  color: #000000;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 25px 0;
+  padding: 5px 0;
+  margin-left: 10px;
   font-weight: inherit !important;
 }
 
