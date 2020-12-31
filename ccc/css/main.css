@@ -262,6 +262,8 @@ blockquote cite:before {
 /* Custom CSS */
 
 .banner {
+  position: relative;
+  height: 100vh;
   background-color: rgb(40, 44, 52)
 }
 
