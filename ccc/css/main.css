@@ -276,7 +276,6 @@ blockquote cite:before {
   border-radius: 10px;
   text-align: left;
   outline: none;
-  font-size: 15px;
   transition: 1s;
   background-color: rgba(0, 0, 0, 0.1)
 
@@ -298,6 +297,23 @@ blockquote cite:before {
   margin-bottom: 3rem;
 }
 
+.team-row {
+  margin-top: 2rem;
+   margin-left: 5rem;
+}
+
+.team-row-2 {
+  margin-left: 13rem;
+  margin-top: 3rem;
+}
+@media screen and (max-width:768px), screen and (max-device-width:768px) {
+  .team-row {
+    margin-left: 3rem;
+  }
+  .team-row-2 {
+    margin-left: 3rem;
+  }
+}
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
