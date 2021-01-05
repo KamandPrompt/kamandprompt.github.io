@@ -19,44 +19,6 @@
  * Customize the background color to match your design.
  */
 
-.container-fluid p {
-    color: black;
-}
-
-a{
-    color: blue;
-    text-decoration: underline
-}
-
-.links a {
-    font-weight: bold;
-    color: #a53030;
-    text-decoration: none
-}
-
-.second-nav a{
-    color: #a53030;
-    text-decoration: none;
-}
-
-.second-nav{
-    padding-top: 10px;
-    text-align: center;
-    float: none;
-}
-
-.second-nav li{
-    display: inline-block;
-    float: unset;
-}
-
-.justify {
-    text-align: justify
-}
-
-.left {
-    text-align: left
-}
 ::-moz-selection {
     background: #f2c2c9;
     color: #a4003a;
@@ -296,6 +258,62 @@ blockquote cite:before {
 	background-image: url('../img/bg/divider6.jpg')
 }
 
+
+/* Custom CSS */
+
+.banner {
+  position: relative;
+  height: 100vh;
+  background-color: rgb(40, 44, 52)
+}
+
+.collapsible {
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  text-align: left;
+  outline: none;
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.1)
+
+}
+
+.active, .collapsible:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  transition: display 1s;
+}
+
+.main-content {
+  margin-bottom: 3rem;
+}
+
+.team-row {
+  margin-top: 2rem;
+   margin-left: 5rem;
+}
+
+.team-row-2 {
+  margin-left: 13rem;
+  margin-top: 3rem;
+}
+@media screen and (max-width:768px), screen and (max-device-width:768px) {
+  .team-row {
+    margin-left: 3rem;
+  }
+  .team-row-2 {
+    margin-left: 3rem;
+  }
+}
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
