@@ -55,7 +55,7 @@ function fillContributors()
           var avatar = data[iter].author.avatar_url;
             var newChild = "\
             <div class=\"col-lg-2 col-sm3 text-center member contributor-div\">\
-              <img class=\"img-circle img-responsive img-center team-img\" src=\" " + avatar + "\" alt=\"\">\
+              <img class=\"img-circle img-responsive img-center team-img\" src=\" " + avatar + "\" height=\"200px\" width=\"200px\" alt=\"\">\
               <h4><a class=\"github-profile\" target=\"_blank\" href=\"https://github.com/" + login + " \">@" + login + "</a></h3>\
               <h5>Commits: " + commits + "</h5>\
             </div>\
